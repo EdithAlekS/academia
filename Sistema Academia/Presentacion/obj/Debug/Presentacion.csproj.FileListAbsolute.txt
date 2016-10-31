@@ -6,8 +6,8 @@ D:\Documentos\Proyectos\academia\Sistema Academia\Presentacion\bin\Debug\Control
 D:\Documentos\Proyectos\academia\Sistema Academia\Presentacion\bin\Debug\Comun.pdb
 D:\Documentos\Proyectos\academia\Sistema Academia\Presentacion\bin\Debug\Controlador.pdb
 D:\Documentos\Proyectos\academia\Sistema Academia\Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
-D:\Documentos\Proyectos\academia\Sistema Academia\Presentacion\obj\Debug\Presentacion.Form1.resources
 D:\Documentos\Proyectos\academia\Sistema Academia\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
 D:\Documentos\Proyectos\academia\Sistema Academia\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
 D:\Documentos\Proyectos\academia\Sistema Academia\Presentacion\obj\Debug\Presentacion.exe
 D:\Documentos\Proyectos\academia\Sistema Academia\Presentacion\obj\Debug\Presentacion.pdb
+D:\Documentos\Proyectos\academia\Sistema Academia\Presentacion\obj\Debug\Presentacion.Inicio.resources
