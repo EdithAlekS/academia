@@ -67,6 +67,7 @@
             this.cb_ciclo.Name = "cb_ciclo";
             this.cb_ciclo.Size = new System.Drawing.Size(167, 21);
             this.cb_ciclo.TabIndex = 1;
+            this.cb_ciclo.UseWaitCursor = true;
             // 
             // groupBox1
             // 
@@ -254,7 +255,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cb_ciclo;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -273,6 +273,7 @@
         private System.Windows.Forms.TextBox tb_nombreCiclo;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btn_principal;
+        private System.Windows.Forms.ComboBox cb_ciclo;
     }
 }
 

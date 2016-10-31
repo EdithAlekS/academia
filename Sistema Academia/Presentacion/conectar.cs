@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 
 namespace Presentacion
+
 {
     public class conectar
     {

@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comun", "Comun\Comun.csproj", "{0A9319C5-C457-40AA-B385-2374184B8125}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controlador", "Controlador\Controlador.csproj", "{BB09A6A2-B08C-4D33-BA98-19A2DA45A163}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentacion", "Presentacion\Presentacion.csproj", "{FFF19450-AF36-4CFD-8028-2EF310B94F92}"
 EndProject
 Global
@@ -15,14 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0A9319C5-C457-40AA-B385-2374184B8125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0A9319C5-C457-40AA-B385-2374184B8125}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0A9319C5-C457-40AA-B385-2374184B8125}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0A9319C5-C457-40AA-B385-2374184B8125}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BB09A6A2-B08C-4D33-BA98-19A2DA45A163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB09A6A2-B08C-4D33-BA98-19A2DA45A163}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB09A6A2-B08C-4D33-BA98-19A2DA45A163}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB09A6A2-B08C-4D33-BA98-19A2DA45A163}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FFF19450-AF36-4CFD-8028-2EF310B94F92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FFF19450-AF36-4CFD-8028-2EF310B94F92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFF19450-AF36-4CFD-8028-2EF310B94F92}.Release|Any CPU.ActiveCfg = Release|Any CPU

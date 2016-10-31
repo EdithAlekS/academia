@@ -23,6 +23,13 @@ namespace Presentacion
             
             SqlConnection conexion = conectar.obtenerConexion();
             MessageBox.Show("Bienvenido al Sistema de la Academia");
+            ADCiclo cicloAD= new ADCiclo();
+            List<string> ciclos = new List<string>();
+            ciclos = cicloAD.obtenerCiclos();
+          
+            ciclos.Add("Crear Ciclo");
+
+            cb_ciclo.DataSource = ciclos;
         }
     }
 }

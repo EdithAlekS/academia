@@ -11,3 +11,4 @@ D:\Documentos\Proyectos\academia\Sistema Academia\Presentacion\obj\Debug\Present
 D:\Documentos\Proyectos\academia\Sistema Academia\Presentacion\obj\Debug\Presentacion.exe
 D:\Documentos\Proyectos\academia\Sistema Academia\Presentacion\obj\Debug\Presentacion.pdb
 D:\Documentos\Proyectos\academia\Sistema Academia\Presentacion\obj\Debug\Presentacion.Inicio.resources
+D:\Documentos\Proyectos\academia\Sistema Academia\Presentacion\obj\Debug\Presentacion.Principal.resources
