@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb_ciclo = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_nombreCiclo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.date_InicioCiclo = new System.Windows.Forms.DateTimePicker();
+            this.date_FinCiclo = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_primaria = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_secuntaria_a = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tb_secundaria_b = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tb_pre = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.btn_principal = new System.Windows.Forms.Button();
@@ -60,31 +60,31 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ciclo:";
             // 
-            // comboBox1
+            // cb_ciclo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(70, 67);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(167, 21);
-            this.comboBox1.TabIndex = 1;
+            this.cb_ciclo.FormattingEnabled = true;
+            this.cb_ciclo.Location = new System.Drawing.Point(70, 67);
+            this.cb_ciclo.Name = "cb_ciclo";
+            this.cb_ciclo.Size = new System.Drawing.Size(167, 21);
+            this.cb_ciclo.TabIndex = 1;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.tb_pre);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.tb_secundaria_b);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.tb_secuntaria_a);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
+            this.groupBox1.Controls.Add(this.tb_primaria);
+            this.groupBox1.Controls.Add(this.date_FinCiclo);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.date_InicioCiclo);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tb_nombreCiclo);
             this.groupBox1.Location = new System.Drawing.Point(13, 108);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(290, 307);
@@ -92,12 +92,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información del Ciclo";
             // 
-            // textBox1
+            // tb_nombreCiclo
             // 
-            this.textBox1.Location = new System.Drawing.Point(57, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 20);
-            this.textBox1.TabIndex = 0;
+            this.tb_nombreCiclo.Location = new System.Drawing.Point(57, 42);
+            this.tb_nombreCiclo.Name = "tb_nombreCiclo";
+            this.tb_nombreCiclo.Size = new System.Drawing.Size(167, 20);
+            this.tb_nombreCiclo.TabIndex = 0;
             // 
             // label2
             // 
@@ -117,19 +117,19 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Inicio:";
             // 
-            // dateTimePicker1
+            // date_InicioCiclo
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(57, 89);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(169, 20);
-            this.dateTimePicker1.TabIndex = 5;
+            this.date_InicioCiclo.Location = new System.Drawing.Point(57, 89);
+            this.date_InicioCiclo.Name = "date_InicioCiclo";
+            this.date_InicioCiclo.Size = new System.Drawing.Size(169, 20);
+            this.date_InicioCiclo.TabIndex = 5;
             // 
-            // dateTimePicker2
+            // date_FinCiclo
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(55, 137);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(169, 20);
-            this.dateTimePicker2.TabIndex = 7;
+            this.date_FinCiclo.Location = new System.Drawing.Point(55, 137);
+            this.date_FinCiclo.Name = "date_FinCiclo";
+            this.date_FinCiclo.Size = new System.Drawing.Size(169, 20);
+            this.date_FinCiclo.TabIndex = 7;
             // 
             // label4
             // 
@@ -149,12 +149,12 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Primaria";
             // 
-            // textBox2
+            // tb_primaria
             // 
-            this.textBox2.Location = new System.Drawing.Point(55, 197);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(69, 20);
-            this.textBox2.TabIndex = 8;
+            this.tb_primaria.Location = new System.Drawing.Point(55, 197);
+            this.tb_primaria.Name = "tb_primaria";
+            this.tb_primaria.Size = new System.Drawing.Size(69, 20);
+            this.tb_primaria.TabIndex = 8;
             // 
             // label6
             // 
@@ -165,12 +165,12 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Secundaria 1° y 2°";
             // 
-            // textBox3
+            // tb_secuntaria_a
             // 
-            this.textBox3.Location = new System.Drawing.Point(55, 223);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(69, 20);
-            this.textBox3.TabIndex = 10;
+            this.tb_secuntaria_a.Location = new System.Drawing.Point(55, 223);
+            this.tb_secuntaria_a.Name = "tb_secuntaria_a";
+            this.tb_secuntaria_a.Size = new System.Drawing.Size(69, 20);
+            this.tb_secuntaria_a.TabIndex = 10;
             // 
             // label7
             // 
@@ -181,12 +181,12 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "Secundaria 3°, 4° y 5°";
             // 
-            // textBox4
+            // tb_secundaria_b
             // 
-            this.textBox4.Location = new System.Drawing.Point(55, 249);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(69, 20);
-            this.textBox4.TabIndex = 12;
+            this.tb_secundaria_b.Location = new System.Drawing.Point(55, 249);
+            this.tb_secundaria_b.Name = "tb_secundaria_b";
+            this.tb_secundaria_b.Size = new System.Drawing.Size(69, 20);
+            this.tb_secundaria_b.TabIndex = 12;
             // 
             // label8
             // 
@@ -197,12 +197,12 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Pre-Universitario";
             // 
-            // textBox5
+            // tb_pre
             // 
-            this.textBox5.Location = new System.Drawing.Point(55, 275);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(69, 20);
-            this.textBox5.TabIndex = 14;
+            this.tb_pre.Location = new System.Drawing.Point(55, 275);
+            this.tb_pre.Name = "tb_pre";
+            this.tb_pre.Size = new System.Drawing.Size(69, 20);
+            this.tb_pre.TabIndex = 14;
             // 
             // label9
             // 
@@ -239,7 +239,7 @@
             this.Controls.Add(this.btn_principal);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cb_ciclo);
             this.Controls.Add(this.label1);
             this.Name = "Inicio";
             this.Text = "Sistema Informático Jonh Neper";
@@ -254,23 +254,23 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_ciclo;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tb_pre;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_secundaria_b;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_secuntaria_a;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.TextBox tb_primaria;
+        private System.Windows.Forms.DateTimePicker date_FinCiclo;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker date_InicioCiclo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_nombreCiclo;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btn_principal;
     }

@@ -16,5 +16,15 @@ namespace Presentacion
         {
             InitializeComponent();
         }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
