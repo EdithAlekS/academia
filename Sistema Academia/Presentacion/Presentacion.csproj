@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ADCiclo.cs" />
+    <Compile Include="MApoderado.cs" />
     <Compile Include="MCiclo.cs" />
     <Compile Include="conectar.cs" />
     <Compile Include="Inicio.cs">
@@ -55,6 +56,9 @@
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="MColegio.cs" />
+    <Compile Include="MEstudiante.cs" />
+    <Compile Include="MMatricula.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
