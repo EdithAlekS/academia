@@ -1,0 +1,7 @@
+D:\Documentos\Proyectos\academia\Sistema Academia\Controlador\bin\Debug\Controlador.dll
+D:\Documentos\Proyectos\academia\Sistema Academia\Controlador\bin\Debug\Controlador.pdb
+D:\Documentos\Proyectos\academia\Sistema Academia\Controlador\bin\Debug\Comun.dll
+D:\Documentos\Proyectos\academia\Sistema Academia\Controlador\bin\Debug\Comun.pdb
+D:\Documentos\Proyectos\academia\Sistema Academia\Controlador\obj\Debug\Controlador.csprojResolveAssemblyReference.cache
+D:\Documentos\Proyectos\academia\Sistema Academia\Controlador\obj\Debug\Controlador.dll
+D:\Documentos\Proyectos\academia\Sistema Academia\Controlador\obj\Debug\Controlador.pdb

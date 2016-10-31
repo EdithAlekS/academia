@@ -1,0 +1,5 @@
+D:\Documentos\Proyectos\academia\Sistema Academia\Comun\bin\Debug\Comun.dll
+D:\Documentos\Proyectos\academia\Sistema Academia\Comun\bin\Debug\Comun.pdb
+D:\Documentos\Proyectos\academia\Sistema Academia\Comun\obj\Debug\Comun.csprojResolveAssemblyReference.cache
+D:\Documentos\Proyectos\academia\Sistema Academia\Comun\obj\Debug\Comun.dll
+D:\Documentos\Proyectos\academia\Sistema Academia\Comun\obj\Debug\Comun.pdb

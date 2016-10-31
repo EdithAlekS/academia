@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Presentacion
 {
@@ -15,6 +16,13 @@ namespace Presentacion
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+            SqlConnection conexion = conectar.obtenerConexion();
+            MessageBox.Show("Bienvenido al Sistema de la Academia");
         }
     }
 }
