@@ -31,21 +31,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cb_ciclo = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tb_nombreCiclo = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.date_InicioCiclo = new System.Windows.Forms.DateTimePicker();
-            this.date_FinCiclo = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tb_primaria = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tb_secuntaria_a = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.tb_secundaria_b = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.tb_pre = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tb_secundaria_b = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tb_secuntaria_a = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tb_primaria = new System.Windows.Forms.TextBox();
+            this.date_FinCiclo = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.date_InicioCiclo = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tb_nombreCiclo = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.btn_principal = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -67,7 +67,7 @@
             this.cb_ciclo.Name = "cb_ciclo";
             this.cb_ciclo.Size = new System.Drawing.Size(167, 21);
             this.cb_ciclo.TabIndex = 1;
-            this.cb_ciclo.UseWaitCursor = true;
+            this.cb_ciclo.SelectedIndexChanged += new System.EventHandler(this.cb_ciclo_SelectedIndexChanged);
             // 
             // groupBox1
             // 
@@ -93,101 +93,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información del Ciclo";
             // 
-            // tb_nombreCiclo
+            // label9
             // 
-            this.tb_nombreCiclo.Location = new System.Drawing.Point(57, 42);
-            this.tb_nombreCiclo.Name = "tb_nombreCiclo";
-            this.tb_nombreCiclo.Size = new System.Drawing.Size(167, 20);
-            this.tb_nombreCiclo.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(54, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Nombre:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(54, 72);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Inicio:";
-            // 
-            // date_InicioCiclo
-            // 
-            this.date_InicioCiclo.Location = new System.Drawing.Point(57, 89);
-            this.date_InicioCiclo.Name = "date_InicioCiclo";
-            this.date_InicioCiclo.Size = new System.Drawing.Size(169, 20);
-            this.date_InicioCiclo.TabIndex = 5;
-            // 
-            // date_FinCiclo
-            // 
-            this.date_FinCiclo.Location = new System.Drawing.Point(55, 137);
-            this.date_FinCiclo.Name = "date_FinCiclo";
-            this.date_FinCiclo.Size = new System.Drawing.Size(169, 20);
-            this.date_FinCiclo.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(52, 120);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(24, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Fin:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(130, 200);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Primaria";
-            // 
-            // tb_primaria
-            // 
-            this.tb_primaria.Location = new System.Drawing.Point(55, 197);
-            this.tb_primaria.Name = "tb_primaria";
-            this.tb_primaria.Size = new System.Drawing.Size(69, 20);
-            this.tb_primaria.TabIndex = 8;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(130, 226);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 13);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Secundaria 1° y 2°";
-            // 
-            // tb_secuntaria_a
-            // 
-            this.tb_secuntaria_a.Location = new System.Drawing.Point(55, 223);
-            this.tb_secuntaria_a.Name = "tb_secuntaria_a";
-            this.tb_secuntaria_a.Size = new System.Drawing.Size(69, 20);
-            this.tb_secuntaria_a.TabIndex = 10;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(130, 252);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(111, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Secundaria 3°, 4° y 5°";
-            // 
-            // tb_secundaria_b
-            // 
-            this.tb_secundaria_b.Location = new System.Drawing.Point(55, 249);
-            this.tb_secundaria_b.Name = "tb_secundaria_b";
-            this.tb_secundaria_b.Size = new System.Drawing.Size(69, 20);
-            this.tb_secundaria_b.TabIndex = 12;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(20, 178);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(98, 13);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Costos por Niveles:";
             // 
             // label8
             // 
@@ -205,14 +118,101 @@
             this.tb_pre.Size = new System.Drawing.Size(69, 20);
             this.tb_pre.TabIndex = 14;
             // 
-            // label9
+            // label7
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(20, 178);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(98, 13);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Costos por Niveles:";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(130, 252);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(111, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Secundaria 3°, 4° y 5°";
+            // 
+            // tb_secundaria_b
+            // 
+            this.tb_secundaria_b.Location = new System.Drawing.Point(55, 249);
+            this.tb_secundaria_b.Name = "tb_secundaria_b";
+            this.tb_secundaria_b.Size = new System.Drawing.Size(69, 20);
+            this.tb_secundaria_b.TabIndex = 12;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(130, 226);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Secundaria 1° y 2°";
+            // 
+            // tb_secuntaria_a
+            // 
+            this.tb_secuntaria_a.Location = new System.Drawing.Point(55, 223);
+            this.tb_secuntaria_a.Name = "tb_secuntaria_a";
+            this.tb_secuntaria_a.Size = new System.Drawing.Size(69, 20);
+            this.tb_secuntaria_a.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(130, 200);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Primaria";
+            // 
+            // tb_primaria
+            // 
+            this.tb_primaria.Location = new System.Drawing.Point(55, 197);
+            this.tb_primaria.Name = "tb_primaria";
+            this.tb_primaria.Size = new System.Drawing.Size(69, 20);
+            this.tb_primaria.TabIndex = 8;
+            // 
+            // date_FinCiclo
+            // 
+            this.date_FinCiclo.Location = new System.Drawing.Point(55, 137);
+            this.date_FinCiclo.Name = "date_FinCiclo";
+            this.date_FinCiclo.Size = new System.Drawing.Size(169, 20);
+            this.date_FinCiclo.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(52, 120);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(24, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Fin:";
+            // 
+            // date_InicioCiclo
+            // 
+            this.date_InicioCiclo.Location = new System.Drawing.Point(57, 89);
+            this.date_InicioCiclo.Name = "date_InicioCiclo";
+            this.date_InicioCiclo.Size = new System.Drawing.Size(169, 20);
+            this.date_InicioCiclo.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(54, 72);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Inicio:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(54, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Nombre:";
+            // 
+            // tb_nombreCiclo
+            // 
+            this.tb_nombreCiclo.Location = new System.Drawing.Point(57, 42);
+            this.tb_nombreCiclo.Name = "tb_nombreCiclo";
+            this.tb_nombreCiclo.Size = new System.Drawing.Size(167, 20);
+            this.tb_nombreCiclo.TabIndex = 0;
             // 
             // label10
             // 
@@ -231,6 +231,7 @@
             this.btn_principal.TabIndex = 4;
             this.btn_principal.Text = "INGRESAR";
             this.btn_principal.UseVisualStyleBackColor = true;
+            this.btn_principal.Click += new System.EventHandler(this.btn_principal_Click);
             // 
             // Inicio
             // 

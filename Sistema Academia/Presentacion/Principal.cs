@@ -12,14 +12,18 @@ namespace Presentacion
 {
     public partial class Principal : Form
     {
-        public Principal()
+        String ciclo { get; set; }
+        public Principal(string nom_ciclo)
         {
+            ciclo = nom_ciclo;
             InitializeComponent();
         }
 
+
+
         private void label22_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label23_Click(object sender, EventArgs e)

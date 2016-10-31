@@ -8,13 +8,13 @@ namespace Presentacion
 {
     public class MCiclo
     {
-        private string nombre { get; set; }
-        private DateTime inicio { get; set; }
-        private DateTime final { get; set; }
-        private float primaria { get; set; }
-        private float secundaria_a { get; set; }
-        private float secundaria_b {get;set;}
-        private float pre { get; set; }
+        public string nombre { get; set; }
+        public DateTime inicio { get; set; }
+        public DateTime final { get; set; }
+        public float primaria { get; set; }
+        public float secundaria_a { get; set; }
+        public float secundaria_b {get;set;}
+        public float pre { get; set; }
 
         public MCiclo() {
 
