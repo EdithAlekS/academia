@@ -29,77 +29,77 @@
         private void InitializeComponent()
         {
             this.page_matricula = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.matricula = new System.Windows.Forms.TabPage();
+            this.btn_limpiar = new System.Windows.Forms.Button();
+            this.btn_registrar = new System.Windows.Forms.Button();
+            this.btn_imprimir = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.tb_deudaFinal = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.Pago = new System.Windows.Forms.GroupBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.tb_pago_parte = new System.Windows.Forms.TextBox();
+            this.rb_pago_total = new System.Windows.Forms.RadioButton();
+            this.rb_pago_parte = new System.Windows.Forms.RadioButton();
+            this.tb_desc_otro = new System.Windows.Forms.TextBox();
+            this.rb_desc_otro = new System.Windows.Forms.RadioButton();
+            this.rb_desc_mediaBec = new System.Windows.Forms.RadioButton();
+            this.rb_desc_becaComp = new System.Windows.Forms.RadioButton();
             this.label24 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.rb_desc_ninguno = new System.Windows.Forms.RadioButton();
+            this.tb_costo_matricula = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.tb_apo_cel = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.tb_apo_nombres = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.tb_apo_apell = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.tb_apo_dni = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.tb_dep_ie = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.tb_provincia_ie = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.tb_distrito_ie = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tb_otroRec_estudiante = new System.Windows.Forms.TextBox();
+            this.cb_otroRec_estudiante = new System.Windows.Forms.CheckBox();
+            this.cb_premioexce_estudiante = new System.Windows.Forms.CheckBox();
+            this.tb_dir_ie = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tb_nombre_ie = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.cb_modalidad = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cb_ciclo = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cb_grado = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cb_nivel = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.pb_foto = new System.Windows.Forms.PictureBox();
+            this.tb_dir_estudiante = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tb_cel_estudiante = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtp_nac_estudiante = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb_sexo_estudiante = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tb_edad_estudiante = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tb_nom_estudiante = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_apell_estudiante = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_codigoMatricula = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_dniEstudiante = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.page_pagos = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
@@ -119,11 +119,11 @@
             this.label27 = new System.Windows.Forms.Label();
             this.page_asistencia = new System.Windows.Forms.TabPage();
             this.label41 = new System.Windows.Forms.Label();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.label40 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.label39 = new System.Windows.Forms.Label();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
@@ -149,30 +149,30 @@
             this.page_Reportes = new System.Windows.Forms.TabPage();
             this.page_horarios = new System.Windows.Forms.TabPage();
             this.page_matricula.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.matricula.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
+            this.Pago.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).BeginInit();
             this.page_pagos.SuspendLayout();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.page_asistencia.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // page_matricula
             // 
-            this.page_matricula.Controls.Add(this.tabPage1);
+            this.page_matricula.Controls.Add(this.matricula);
             this.page_matricula.Controls.Add(this.page_pagos);
             this.page_matricula.Controls.Add(this.page_asistencia);
             this.page_matricula.Controls.Add(this.page_Reportes);
@@ -183,67 +183,67 @@
             this.page_matricula.Size = new System.Drawing.Size(1103, 601);
             this.page_matricula.TabIndex = 0;
             // 
-            // tabPage1
+            // matricula
             // 
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.groupBox5);
-            this.tabPage1.Controls.Add(this.groupBox4);
-            this.tabPage1.Controls.Add(this.groupBox3);
-            this.tabPage1.Controls.Add(this.groupBox2);
-            this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1095, 575);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Matricula";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.matricula.Controls.Add(this.btn_limpiar);
+            this.matricula.Controls.Add(this.btn_registrar);
+            this.matricula.Controls.Add(this.btn_imprimir);
+            this.matricula.Controls.Add(this.groupBox5);
+            this.matricula.Controls.Add(this.groupBox4);
+            this.matricula.Controls.Add(this.groupBox3);
+            this.matricula.Controls.Add(this.groupBox2);
+            this.matricula.Controls.Add(this.groupBox1);
+            this.matricula.Controls.Add(this.tb_codigoMatricula);
+            this.matricula.Controls.Add(this.label2);
+            this.matricula.Controls.Add(this.tb_dniEstudiante);
+            this.matricula.Controls.Add(this.label1);
+            this.matricula.Location = new System.Drawing.Point(4, 22);
+            this.matricula.Name = "matricula";
+            this.matricula.Padding = new System.Windows.Forms.Padding(3);
+            this.matricula.Size = new System.Drawing.Size(1095, 575);
+            this.matricula.TabIndex = 0;
+            this.matricula.Text = "Matricula";
+            this.matricula.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_limpiar
             // 
-            this.button3.Location = new System.Drawing.Point(724, 405);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(338, 56);
-            this.button3.TabIndex = 35;
-            this.button3.Text = "Limpiar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_limpiar.Location = new System.Drawing.Point(724, 405);
+            this.btn_limpiar.Name = "btn_limpiar";
+            this.btn_limpiar.Size = new System.Drawing.Size(338, 56);
+            this.btn_limpiar.TabIndex = 35;
+            this.btn_limpiar.Text = "Limpiar";
+            this.btn_limpiar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_registrar
             // 
-            this.button2.Location = new System.Drawing.Point(724, 342);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(338, 56);
-            this.button2.TabIndex = 34;
-            this.button2.Text = "Registrar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_registrar.Location = new System.Drawing.Point(724, 342);
+            this.btn_registrar.Name = "btn_registrar";
+            this.btn_registrar.Size = new System.Drawing.Size(338, 56);
+            this.btn_registrar.TabIndex = 34;
+            this.btn_registrar.Text = "Registrar";
+            this.btn_registrar.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_imprimir
             // 
-            this.button1.Location = new System.Drawing.Point(724, 280);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(338, 56);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "Imprimir Ficha";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_imprimir.Location = new System.Drawing.Point(724, 280);
+            this.btn_imprimir.Name = "btn_imprimir";
+            this.btn_imprimir.Size = new System.Drawing.Size(338, 56);
+            this.btn_imprimir.TabIndex = 33;
+            this.btn_imprimir.Text = "Imprimir Ficha";
+            this.btn_imprimir.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.textBox22);
+            this.groupBox5.Controls.Add(this.tb_deudaFinal);
             this.groupBox5.Controls.Add(this.label26);
-            this.groupBox5.Controls.Add(this.groupBox6);
-            this.groupBox5.Controls.Add(this.textBox20);
-            this.groupBox5.Controls.Add(this.radioButton4);
-            this.groupBox5.Controls.Add(this.radioButton3);
-            this.groupBox5.Controls.Add(this.radioButton2);
+            this.groupBox5.Controls.Add(this.Pago);
+            this.groupBox5.Controls.Add(this.tb_desc_otro);
+            this.groupBox5.Controls.Add(this.rb_desc_otro);
+            this.groupBox5.Controls.Add(this.rb_desc_mediaBec);
+            this.groupBox5.Controls.Add(this.rb_desc_becaComp);
             this.groupBox5.Controls.Add(this.label24);
-            this.groupBox5.Controls.Add(this.radioButton1);
-            this.groupBox5.Controls.Add(this.textBox19);
+            this.groupBox5.Controls.Add(this.rb_desc_ninguno);
+            this.groupBox5.Controls.Add(this.tb_costo_matricula);
             this.groupBox5.Controls.Add(this.label23);
             this.groupBox5.Location = new System.Drawing.Point(724, 40);
             this.groupBox5.Name = "groupBox5";
@@ -252,13 +252,13 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Pago de Matrícula";
             // 
-            // textBox22
+            // tb_deudaFinal
             // 
-            this.textBox22.Enabled = false;
-            this.textBox22.Location = new System.Drawing.Point(258, 194);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(60, 20);
-            this.textBox22.TabIndex = 43;
+            this.tb_deudaFinal.Enabled = false;
+            this.tb_deudaFinal.Location = new System.Drawing.Point(258, 194);
+            this.tb_deudaFinal.Name = "tb_deudaFinal";
+            this.tb_deudaFinal.Size = new System.Drawing.Size(60, 20);
+            this.tb_deudaFinal.TabIndex = 43;
             // 
             // label26
             // 
@@ -269,18 +269,18 @@
             this.label26.TabIndex = 42;
             this.label26.Text = "Costo de matrícula:";
             // 
-            // groupBox6
+            // Pago
             // 
-            this.groupBox6.Controls.Add(this.label25);
-            this.groupBox6.Controls.Add(this.textBox21);
-            this.groupBox6.Controls.Add(this.radioButton6);
-            this.groupBox6.Controls.Add(this.radioButton5);
-            this.groupBox6.Location = new System.Drawing.Point(141, 58);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(177, 130);
-            this.groupBox6.TabIndex = 41;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "groupBox6";
+            this.Pago.Controls.Add(this.label25);
+            this.Pago.Controls.Add(this.tb_pago_parte);
+            this.Pago.Controls.Add(this.rb_pago_total);
+            this.Pago.Controls.Add(this.rb_pago_parte);
+            this.Pago.Location = new System.Drawing.Point(141, 58);
+            this.Pago.Name = "Pago";
+            this.Pago.Size = new System.Drawing.Size(177, 130);
+            this.Pago.TabIndex = 41;
+            this.Pago.TabStop = false;
+            this.Pago.Text = "Pago";
             // 
             // label25
             // 
@@ -291,73 +291,73 @@
             this.label25.TabIndex = 42;
             this.label25.Text = "Monto:";
             // 
-            // textBox21
+            // tb_pago_parte
             // 
-            this.textBox21.Enabled = false;
-            this.textBox21.Location = new System.Drawing.Point(89, 45);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(76, 20);
-            this.textBox21.TabIndex = 42;
+            this.tb_pago_parte.Enabled = false;
+            this.tb_pago_parte.Location = new System.Drawing.Point(89, 45);
+            this.tb_pago_parte.Name = "tb_pago_parte";
+            this.tb_pago_parte.Size = new System.Drawing.Size(76, 20);
+            this.tb_pago_parte.TabIndex = 42;
             // 
-            // radioButton6
+            // rb_pago_total
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Checked = true;
-            this.radioButton6.Location = new System.Drawing.Point(14, 94);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(49, 17);
-            this.radioButton6.TabIndex = 43;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Total";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rb_pago_total.AutoSize = true;
+            this.rb_pago_total.Checked = true;
+            this.rb_pago_total.Location = new System.Drawing.Point(14, 94);
+            this.rb_pago_total.Name = "rb_pago_total";
+            this.rb_pago_total.Size = new System.Drawing.Size(49, 17);
+            this.rb_pago_total.TabIndex = 43;
+            this.rb_pago_total.TabStop = true;
+            this.rb_pago_total.Text = "Total";
+            this.rb_pago_total.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // rb_pago_parte
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(14, 25);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(50, 17);
-            this.radioButton5.TabIndex = 42;
-            this.radioButton5.Text = "Parte";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rb_pago_parte.AutoSize = true;
+            this.rb_pago_parte.Location = new System.Drawing.Point(14, 25);
+            this.rb_pago_parte.Name = "rb_pago_parte";
+            this.rb_pago_parte.Size = new System.Drawing.Size(50, 17);
+            this.rb_pago_parte.TabIndex = 42;
+            this.rb_pago_parte.Text = "Parte";
+            this.rb_pago_parte.UseVisualStyleBackColor = true;
             // 
-            // textBox20
+            // tb_desc_otro
             // 
-            this.textBox20.Enabled = false;
-            this.textBox20.Location = new System.Drawing.Point(32, 175);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(76, 20);
-            this.textBox20.TabIndex = 40;
+            this.tb_desc_otro.Enabled = false;
+            this.tb_desc_otro.Location = new System.Drawing.Point(32, 175);
+            this.tb_desc_otro.Name = "tb_desc_otro";
+            this.tb_desc_otro.Size = new System.Drawing.Size(76, 20);
+            this.tb_desc_otro.TabIndex = 40;
             // 
-            // radioButton4
+            // rb_desc_otro
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(32, 152);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(100, 17);
-            this.radioButton4.TabIndex = 39;
-            this.radioButton4.Text = "Otro Descuento";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rb_desc_otro.AutoSize = true;
+            this.rb_desc_otro.Location = new System.Drawing.Point(32, 152);
+            this.rb_desc_otro.Name = "rb_desc_otro";
+            this.rb_desc_otro.Size = new System.Drawing.Size(100, 17);
+            this.rb_desc_otro.TabIndex = 39;
+            this.rb_desc_otro.Text = "Otro Descuento";
+            this.rb_desc_otro.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rb_desc_mediaBec
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(32, 129);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(82, 17);
-            this.radioButton3.TabIndex = 38;
-            this.radioButton3.Text = "Media Beca";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rb_desc_mediaBec.AutoSize = true;
+            this.rb_desc_mediaBec.Location = new System.Drawing.Point(32, 129);
+            this.rb_desc_mediaBec.Name = "rb_desc_mediaBec";
+            this.rb_desc_mediaBec.Size = new System.Drawing.Size(82, 17);
+            this.rb_desc_mediaBec.TabIndex = 38;
+            this.rb_desc_mediaBec.Text = "Media Beca";
+            this.rb_desc_mediaBec.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rb_desc_becaComp
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(32, 106);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(97, 17);
-            this.radioButton2.TabIndex = 37;
-            this.radioButton2.Text = "Beca Completa";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rb_desc_becaComp.AutoSize = true;
+            this.rb_desc_becaComp.Location = new System.Drawing.Point(32, 106);
+            this.rb_desc_becaComp.Name = "rb_desc_becaComp";
+            this.rb_desc_becaComp.Size = new System.Drawing.Size(97, 17);
+            this.rb_desc_becaComp.TabIndex = 37;
+            this.rb_desc_becaComp.Text = "Beca Completa";
+            this.rb_desc_becaComp.UseVisualStyleBackColor = true;
             // 
             // label24
             // 
@@ -368,25 +368,25 @@
             this.label24.TabIndex = 36;
             this.label24.Text = "Descuento:";
             // 
-            // radioButton1
+            // rb_desc_ninguno
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(32, 83);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(65, 17);
-            this.radioButton1.TabIndex = 35;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Ninguno";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rb_desc_ninguno.AutoSize = true;
+            this.rb_desc_ninguno.Checked = true;
+            this.rb_desc_ninguno.Location = new System.Drawing.Point(32, 83);
+            this.rb_desc_ninguno.Name = "rb_desc_ninguno";
+            this.rb_desc_ninguno.Size = new System.Drawing.Size(65, 17);
+            this.rb_desc_ninguno.TabIndex = 35;
+            this.rb_desc_ninguno.TabStop = true;
+            this.rb_desc_ninguno.Text = "Ninguno";
+            this.rb_desc_ninguno.UseVisualStyleBackColor = true;
             // 
-            // textBox19
+            // tb_costo_matricula
             // 
-            this.textBox19.Enabled = false;
-            this.textBox19.Location = new System.Drawing.Point(122, 19);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(60, 20);
-            this.textBox19.TabIndex = 34;
+            this.tb_costo_matricula.Enabled = false;
+            this.tb_costo_matricula.Location = new System.Drawing.Point(122, 19);
+            this.tb_costo_matricula.Name = "tb_costo_matricula";
+            this.tb_costo_matricula.Size = new System.Drawing.Size(60, 20);
+            this.tb_costo_matricula.TabIndex = 34;
             // 
             // label23
             // 
@@ -399,13 +399,13 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.textBox18);
+            this.groupBox4.Controls.Add(this.tb_apo_cel);
             this.groupBox4.Controls.Add(this.label22);
-            this.groupBox4.Controls.Add(this.textBox17);
+            this.groupBox4.Controls.Add(this.tb_apo_nombres);
             this.groupBox4.Controls.Add(this.label21);
-            this.groupBox4.Controls.Add(this.textBox16);
+            this.groupBox4.Controls.Add(this.tb_apo_apell);
             this.groupBox4.Controls.Add(this.label20);
-            this.groupBox4.Controls.Add(this.textBox15);
+            this.groupBox4.Controls.Add(this.tb_apo_dni);
             this.groupBox4.Controls.Add(this.label19);
             this.groupBox4.Location = new System.Drawing.Point(507, 255);
             this.groupBox4.Name = "groupBox4";
@@ -414,12 +414,12 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Apoderado:";
             // 
-            // textBox18
+            // tb_apo_cel
             // 
-            this.textBox18.Location = new System.Drawing.Point(16, 177);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(168, 20);
-            this.textBox18.TabIndex = 40;
+            this.tb_apo_cel.Location = new System.Drawing.Point(16, 177);
+            this.tb_apo_cel.Name = "tb_apo_cel";
+            this.tb_apo_cel.Size = new System.Drawing.Size(168, 20);
+            this.tb_apo_cel.TabIndex = 40;
             // 
             // label22
             // 
@@ -430,12 +430,12 @@
             this.label22.TabIndex = 39;
             this.label22.Text = "Celular:";
             // 
-            // textBox17
+            // tb_apo_nombres
             // 
-            this.textBox17.Location = new System.Drawing.Point(16, 134);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(168, 20);
-            this.textBox17.TabIndex = 38;
+            this.tb_apo_nombres.Location = new System.Drawing.Point(16, 134);
+            this.tb_apo_nombres.Name = "tb_apo_nombres";
+            this.tb_apo_nombres.Size = new System.Drawing.Size(168, 20);
+            this.tb_apo_nombres.TabIndex = 38;
             // 
             // label21
             // 
@@ -446,12 +446,12 @@
             this.label21.TabIndex = 37;
             this.label21.Text = "Nombres:";
             // 
-            // textBox16
+            // tb_apo_apell
             // 
-            this.textBox16.Location = new System.Drawing.Point(16, 91);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(168, 20);
-            this.textBox16.TabIndex = 36;
+            this.tb_apo_apell.Location = new System.Drawing.Point(16, 91);
+            this.tb_apo_apell.Name = "tb_apo_apell";
+            this.tb_apo_apell.Size = new System.Drawing.Size(168, 20);
+            this.tb_apo_apell.TabIndex = 36;
             // 
             // label20
             // 
@@ -462,12 +462,12 @@
             this.label20.TabIndex = 35;
             this.label20.Text = "Apellidos:";
             // 
-            // textBox15
+            // tb_apo_dni
             // 
-            this.textBox15.Location = new System.Drawing.Point(16, 44);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(168, 20);
-            this.textBox15.TabIndex = 34;
+            this.tb_apo_dni.Location = new System.Drawing.Point(16, 44);
+            this.tb_apo_dni.Name = "tb_apo_dni";
+            this.tb_apo_dni.Size = new System.Drawing.Size(168, 20);
+            this.tb_apo_dni.TabIndex = 34;
             // 
             // label19
             // 
@@ -480,18 +480,18 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox14);
+            this.groupBox3.Controls.Add(this.tb_dep_ie);
             this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.textBox13);
+            this.groupBox3.Controls.Add(this.tb_provincia_ie);
             this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Controls.Add(this.textBox12);
+            this.groupBox3.Controls.Add(this.tb_distrito_ie);
             this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.textBox11);
-            this.groupBox3.Controls.Add(this.checkBox2);
-            this.groupBox3.Controls.Add(this.checkBox1);
-            this.groupBox3.Controls.Add(this.textBox10);
+            this.groupBox3.Controls.Add(this.tb_otroRec_estudiante);
+            this.groupBox3.Controls.Add(this.cb_otroRec_estudiante);
+            this.groupBox3.Controls.Add(this.cb_premioexce_estudiante);
+            this.groupBox3.Controls.Add(this.tb_dir_ie);
             this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.textBox9);
+            this.groupBox3.Controls.Add(this.tb_nombre_ie);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Location = new System.Drawing.Point(40, 325);
             this.groupBox3.Name = "groupBox3";
@@ -500,12 +500,12 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Colegio de Procedencia";
             // 
-            // textBox14
+            // tb_dep_ie
             // 
-            this.textBox14.Location = new System.Drawing.Point(267, 129);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(163, 20);
-            this.textBox14.TabIndex = 32;
+            this.tb_dep_ie.Location = new System.Drawing.Point(267, 129);
+            this.tb_dep_ie.Name = "tb_dep_ie";
+            this.tb_dep_ie.Size = new System.Drawing.Size(163, 20);
+            this.tb_dep_ie.TabIndex = 32;
             // 
             // label18
             // 
@@ -516,12 +516,12 @@
             this.label18.TabIndex = 31;
             this.label18.Text = "Departamento:";
             // 
-            // textBox13
+            // tb_provincia_ie
             // 
-            this.textBox13.Location = new System.Drawing.Point(267, 80);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(163, 20);
-            this.textBox13.TabIndex = 30;
+            this.tb_provincia_ie.Location = new System.Drawing.Point(267, 80);
+            this.tb_provincia_ie.Name = "tb_provincia_ie";
+            this.tb_provincia_ie.Size = new System.Drawing.Size(163, 20);
+            this.tb_provincia_ie.TabIndex = 30;
             // 
             // label17
             // 
@@ -532,12 +532,12 @@
             this.label17.TabIndex = 29;
             this.label17.Text = "Provincia:";
             // 
-            // textBox12
+            // tb_distrito_ie
             // 
-            this.textBox12.Location = new System.Drawing.Point(267, 37);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(163, 20);
-            this.textBox12.TabIndex = 28;
+            this.tb_distrito_ie.Location = new System.Drawing.Point(267, 37);
+            this.tb_distrito_ie.Name = "tb_distrito_ie";
+            this.tb_distrito_ie.Size = new System.Drawing.Size(163, 20);
+            this.tb_distrito_ie.TabIndex = 28;
             // 
             // label16
             // 
@@ -548,40 +548,40 @@
             this.label16.TabIndex = 27;
             this.label16.Text = "Distrito:";
             // 
-            // textBox11
+            // tb_otroRec_estudiante
             // 
-            this.textBox11.Enabled = false;
-            this.textBox11.Location = new System.Drawing.Point(166, 129);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(86, 20);
-            this.textBox11.TabIndex = 26;
+            this.tb_otroRec_estudiante.Enabled = false;
+            this.tb_otroRec_estudiante.Location = new System.Drawing.Point(166, 129);
+            this.tb_otroRec_estudiante.Name = "tb_otroRec_estudiante";
+            this.tb_otroRec_estudiante.Size = new System.Drawing.Size(86, 20);
+            this.tb_otroRec_estudiante.TabIndex = 26;
             // 
-            // checkBox2
+            // cb_otroRec_estudiante
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(166, 106);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(54, 17);
-            this.checkBox2.TabIndex = 25;
-            this.checkBox2.Text = "Otros:";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cb_otroRec_estudiante.AutoSize = true;
+            this.cb_otroRec_estudiante.Location = new System.Drawing.Point(166, 106);
+            this.cb_otroRec_estudiante.Name = "cb_otroRec_estudiante";
+            this.cb_otroRec_estudiante.Size = new System.Drawing.Size(54, 17);
+            this.cb_otroRec_estudiante.TabIndex = 25;
+            this.cb_otroRec_estudiante.Text = "Otros:";
+            this.cb_otroRec_estudiante.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // cb_premioexce_estudiante
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(21, 107);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(128, 17);
-            this.checkBox1.TabIndex = 24;
-            this.checkBox1.Text = "Premio de Excelencia";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cb_premioexce_estudiante.AutoSize = true;
+            this.cb_premioexce_estudiante.Location = new System.Drawing.Point(21, 107);
+            this.cb_premioexce_estudiante.Name = "cb_premioexce_estudiante";
+            this.cb_premioexce_estudiante.Size = new System.Drawing.Size(128, 17);
+            this.cb_premioexce_estudiante.TabIndex = 24;
+            this.cb_premioexce_estudiante.Text = "Premio de Excelencia";
+            this.cb_premioexce_estudiante.UseVisualStyleBackColor = true;
             // 
-            // textBox10
+            // tb_dir_ie
             // 
-            this.textBox10.Location = new System.Drawing.Point(21, 80);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(231, 20);
-            this.textBox10.TabIndex = 23;
+            this.tb_dir_ie.Location = new System.Drawing.Point(21, 80);
+            this.tb_dir_ie.Name = "tb_dir_ie";
+            this.tb_dir_ie.Size = new System.Drawing.Size(231, 20);
+            this.tb_dir_ie.TabIndex = 23;
             // 
             // label15
             // 
@@ -592,12 +592,12 @@
             this.label15.TabIndex = 22;
             this.label15.Text = "Dirección";
             // 
-            // textBox9
+            // tb_nombre_ie
             // 
-            this.textBox9.Location = new System.Drawing.Point(21, 37);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(231, 20);
-            this.textBox9.TabIndex = 21;
+            this.tb_nombre_ie.Location = new System.Drawing.Point(21, 37);
+            this.tb_nombre_ie.Name = "tb_nombre_ie";
+            this.tb_nombre_ie.Size = new System.Drawing.Size(231, 20);
+            this.tb_nombre_ie.TabIndex = 21;
             // 
             // label14
             // 
@@ -610,13 +610,13 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Controls.Add(this.cb_modalidad);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.comboBox4);
+            this.groupBox2.Controls.Add(this.cb_ciclo);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.comboBox3);
+            this.groupBox2.Controls.Add(this.cb_grado);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.cb_nivel);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Location = new System.Drawing.Point(507, 40);
             this.groupBox2.Name = "groupBox2";
@@ -625,13 +625,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Matrícula";
             // 
-            // textBox8
+            // cb_modalidad
             // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(16, 169);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(121, 20);
-            this.textBox8.TabIndex = 20;
+            this.cb_modalidad.Enabled = false;
+            this.cb_modalidad.Location = new System.Drawing.Point(16, 169);
+            this.cb_modalidad.Name = "cb_modalidad";
+            this.cb_modalidad.Size = new System.Drawing.Size(121, 20);
+            this.cb_modalidad.TabIndex = 20;
             // 
             // label13
             // 
@@ -642,13 +642,13 @@
             this.label13.TabIndex = 26;
             this.label13.Text = "Modalidad:";
             // 
-            // comboBox4
+            // cb_ciclo
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(16, 126);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 25;
+            this.cb_ciclo.FormattingEnabled = true;
+            this.cb_ciclo.Location = new System.Drawing.Point(16, 126);
+            this.cb_ciclo.Name = "cb_ciclo";
+            this.cb_ciclo.Size = new System.Drawing.Size(121, 21);
+            this.cb_ciclo.TabIndex = 25;
             // 
             // label12
             // 
@@ -659,13 +659,13 @@
             this.label12.TabIndex = 24;
             this.label12.Text = "Ciclo:";
             // 
-            // comboBox3
+            // cb_grado
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(16, 82);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(56, 21);
-            this.comboBox3.TabIndex = 23;
+            this.cb_grado.FormattingEnabled = true;
+            this.cb_grado.Location = new System.Drawing.Point(16, 82);
+            this.cb_grado.Name = "cb_grado";
+            this.cb_grado.Size = new System.Drawing.Size(56, 21);
+            this.cb_grado.TabIndex = 23;
             // 
             // label11
             // 
@@ -676,13 +676,13 @@
             this.label11.TabIndex = 22;
             this.label11.Text = "Grado:";
             // 
-            // comboBox2
+            // cb_nivel
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(16, 37);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 21;
+            this.cb_nivel.FormattingEnabled = true;
+            this.cb_nivel.Location = new System.Drawing.Point(16, 37);
+            this.cb_nivel.Name = "cb_nivel";
+            this.cb_nivel.Size = new System.Drawing.Size(121, 21);
+            this.cb_nivel.TabIndex = 21;
             // 
             // label10
             // 
@@ -695,20 +695,20 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.pb_foto);
+            this.groupBox1.Controls.Add(this.tb_dir_estudiante);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.tb_cel_estudiante);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.dtp_nac_estudiante);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cb_sexo_estudiante);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.tb_edad_estudiante);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.tb_nom_estudiante);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.tb_apell_estudiante);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(40, 40);
             this.groupBox1.Name = "groupBox1";
@@ -717,20 +717,20 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Estudiante:";
             // 
-            // pictureBox1
+            // pb_foto
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(267, 38);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(163, 193);
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
+            this.pb_foto.Location = new System.Drawing.Point(267, 38);
+            this.pb_foto.Name = "pb_foto";
+            this.pb_foto.Size = new System.Drawing.Size(163, 193);
+            this.pb_foto.TabIndex = 19;
+            this.pb_foto.TabStop = false;
             // 
-            // textBox7
+            // tb_dir_estudiante
             // 
-            this.textBox7.Location = new System.Drawing.Point(21, 211);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(231, 20);
-            this.textBox7.TabIndex = 18;
+            this.tb_dir_estudiante.Location = new System.Drawing.Point(21, 211);
+            this.tb_dir_estudiante.Name = "tb_dir_estudiante";
+            this.tb_dir_estudiante.Size = new System.Drawing.Size(231, 20);
+            this.tb_dir_estudiante.TabIndex = 18;
             // 
             // label9
             // 
@@ -741,12 +741,12 @@
             this.label9.TabIndex = 17;
             this.label9.Text = "Dirección:";
             // 
-            // textBox6
+            // tb_cel_estudiante
             // 
-            this.textBox6.Location = new System.Drawing.Point(131, 169);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(121, 20);
-            this.textBox6.TabIndex = 16;
+            this.tb_cel_estudiante.Location = new System.Drawing.Point(131, 169);
+            this.tb_cel_estudiante.Name = "tb_cel_estudiante";
+            this.tb_cel_estudiante.Size = new System.Drawing.Size(121, 20);
+            this.tb_cel_estudiante.TabIndex = 16;
             // 
             // label8
             // 
@@ -757,30 +757,30 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Celular:";
             // 
-            // dateTimePicker1
+            // dtp_nac_estudiante
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(21, 166);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(99, 20);
-            this.dateTimePicker1.TabIndex = 14;
+            this.dtp_nac_estudiante.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_nac_estudiante.Location = new System.Drawing.Point(21, 166);
+            this.dtp_nac_estudiante.Name = "dtp_nac_estudiante";
+            this.dtp_nac_estudiante.Size = new System.Drawing.Size(99, 20);
+            this.dtp_nac_estudiante.TabIndex = 14;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(18, 149);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.Size = new System.Drawing.Size(111, 13);
             this.label7.TabIndex = 13;
-            this.label7.Text = "Edad:";
+            this.label7.Text = "Fecha de Nacimiento:";
             // 
-            // comboBox1
+            // cb_sexo_estudiante
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(131, 125);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 12;
+            this.cb_sexo_estudiante.FormattingEnabled = true;
+            this.cb_sexo_estudiante.Location = new System.Drawing.Point(131, 125);
+            this.cb_sexo_estudiante.Name = "cb_sexo_estudiante";
+            this.cb_sexo_estudiante.Size = new System.Drawing.Size(121, 21);
+            this.cb_sexo_estudiante.TabIndex = 12;
             // 
             // label6
             // 
@@ -791,12 +791,12 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Sexo:";
             // 
-            // textBox5
+            // tb_edad_estudiante
             // 
-            this.textBox5.Location = new System.Drawing.Point(21, 126);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(68, 20);
-            this.textBox5.TabIndex = 10;
+            this.tb_edad_estudiante.Location = new System.Drawing.Point(21, 126);
+            this.tb_edad_estudiante.Name = "tb_edad_estudiante";
+            this.tb_edad_estudiante.Size = new System.Drawing.Size(68, 20);
+            this.tb_edad_estudiante.TabIndex = 10;
             // 
             // label5
             // 
@@ -807,12 +807,12 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Edad:";
             // 
-            // textBox4
+            // tb_nom_estudiante
             // 
-            this.textBox4.Location = new System.Drawing.Point(21, 82);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(231, 20);
-            this.textBox4.TabIndex = 8;
+            this.tb_nom_estudiante.Location = new System.Drawing.Point(21, 82);
+            this.tb_nom_estudiante.Name = "tb_nom_estudiante";
+            this.tb_nom_estudiante.Size = new System.Drawing.Size(231, 20);
+            this.tb_nom_estudiante.TabIndex = 8;
             // 
             // label4
             // 
@@ -823,12 +823,12 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Nombres:";
             // 
-            // textBox3
+            // tb_apell_estudiante
             // 
-            this.textBox3.Location = new System.Drawing.Point(21, 38);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(231, 20);
-            this.textBox3.TabIndex = 6;
+            this.tb_apell_estudiante.Location = new System.Drawing.Point(21, 38);
+            this.tb_apell_estudiante.Name = "tb_apell_estudiante";
+            this.tb_apell_estudiante.Size = new System.Drawing.Size(231, 20);
+            this.tb_apell_estudiante.TabIndex = 6;
             // 
             // label3
             // 
@@ -839,13 +839,13 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Apellidos:";
             // 
-            // textBox2
+            // tb_codigoMatricula
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(589, 8);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(118, 20);
-            this.textBox2.TabIndex = 27;
+            this.tb_codigoMatricula.Enabled = false;
+            this.tb_codigoMatricula.Location = new System.Drawing.Point(589, 8);
+            this.tb_codigoMatricula.Name = "tb_codigoMatricula";
+            this.tb_codigoMatricula.Size = new System.Drawing.Size(118, 20);
+            this.tb_codigoMatricula.TabIndex = 27;
             // 
             // label2
             // 
@@ -856,12 +856,12 @@
             this.label2.TabIndex = 26;
             this.label2.Text = "Código de Matrícula:";
             // 
-            // textBox1
+            // tb_dniEstudiante
             // 
-            this.textBox1.Location = new System.Drawing.Point(72, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 20);
-            this.textBox1.TabIndex = 25;
+            this.tb_dniEstudiante.Location = new System.Drawing.Point(72, 8);
+            this.tb_dniEstudiante.Name = "tb_dniEstudiante";
+            this.tb_dniEstudiante.Size = new System.Drawing.Size(150, 20);
+            this.tb_dniEstudiante.TabIndex = 25;
             // 
             // label1
             // 
@@ -883,7 +883,7 @@
             this.page_pagos.Location = new System.Drawing.Point(4, 22);
             this.page_pagos.Name = "page_pagos";
             this.page_pagos.Padding = new System.Windows.Forms.Padding(3);
-            this.page_pagos.Size = new System.Drawing.Size(1095, 497);
+            this.page_pagos.Size = new System.Drawing.Size(1095, 575);
             this.page_pagos.TabIndex = 1;
             this.page_pagos.Text = "Pagos";
             this.page_pagos.UseVisualStyleBackColor = true;
@@ -1054,6 +1054,24 @@
             this.label41.TabIndex = 10;
             this.label41.Text = "00:00 PM";
             // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.dataGridView4);
+            this.groupBox10.Location = new System.Drawing.Point(732, 100);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(342, 350);
+            this.groupBox10.TabIndex = 20;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Faltas:";
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(12, 35);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(310, 140);
+            this.dataGridView4.TabIndex = 0;
+            // 
             // label40
             // 
             this.label40.AutoSize = true;
@@ -1091,24 +1109,6 @@
             this.pictureBox2.Size = new System.Drawing.Size(350, 389);
             this.pictureBox2.TabIndex = 21;
             this.pictureBox2.TabStop = false;
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.dataGridView4);
-            this.groupBox10.Location = new System.Drawing.Point(732, 100);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(342, 350);
-            this.groupBox10.TabIndex = 20;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Faltas:";
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(12, 35);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(310, 140);
-            this.dataGridView4.TabIndex = 0;
             // 
             // groupBox9
             // 
@@ -1305,7 +1305,7 @@
             this.page_Reportes.Location = new System.Drawing.Point(4, 22);
             this.page_Reportes.Name = "page_Reportes";
             this.page_Reportes.Padding = new System.Windows.Forms.Padding(3);
-            this.page_Reportes.Size = new System.Drawing.Size(744, 719);
+            this.page_Reportes.Size = new System.Drawing.Size(1095, 575);
             this.page_Reportes.TabIndex = 3;
             this.page_Reportes.Text = "Reportes";
             this.page_Reportes.UseVisualStyleBackColor = true;
@@ -1315,7 +1315,7 @@
             this.page_horarios.Location = new System.Drawing.Point(4, 22);
             this.page_horarios.Name = "page_horarios";
             this.page_horarios.Padding = new System.Windows.Forms.Padding(3);
-            this.page_horarios.Size = new System.Drawing.Size(744, 719);
+            this.page_horarios.Size = new System.Drawing.Size(1095, 575);
             this.page_horarios.TabIndex = 4;
             this.page_horarios.Text = "Horarios";
             this.page_horarios.UseVisualStyleBackColor = true;
@@ -1329,12 +1329,12 @@
             this.Name = "Principal";
             this.Text = "Principal";
             this.page_matricula.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.matricula.ResumeLayout(false);
+            this.matricula.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
+            this.Pago.ResumeLayout(false);
+            this.Pago.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -1343,7 +1343,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).EndInit();
             this.page_pagos.ResumeLayout(false);
             this.page_pagos.PerformLayout();
             this.groupBox7.ResumeLayout(false);
@@ -1352,11 +1352,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.page_asistencia.ResumeLayout(false);
             this.page_asistencia.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.groupBox10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
@@ -1367,81 +1367,81 @@
         #endregion
 
         private System.Windows.Forms.TabControl page_matricula;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage matricula;
         private System.Windows.Forms.TabPage page_pagos;
         private System.Windows.Forms.TabPage page_asistencia;
         private System.Windows.Forms.TabPage page_Reportes;
         private System.Windows.Forms.TabPage page_horarios;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_limpiar;
+        private System.Windows.Forms.Button btn_registrar;
+        private System.Windows.Forms.Button btn_imprimir;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox tb_deudaFinal;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox Pago;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.TextBox tb_pago_parte;
+        private System.Windows.Forms.RadioButton rb_pago_total;
+        private System.Windows.Forms.RadioButton rb_pago_parte;
+        private System.Windows.Forms.TextBox tb_desc_otro;
+        private System.Windows.Forms.RadioButton rb_desc_otro;
+        private System.Windows.Forms.RadioButton rb_desc_mediaBec;
+        private System.Windows.Forms.RadioButton rb_desc_becaComp;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.RadioButton rb_desc_ninguno;
+        private System.Windows.Forms.TextBox tb_costo_matricula;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox tb_apo_cel;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox tb_apo_nombres;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox tb_apo_apell;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox tb_apo_dni;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox tb_dep_ie;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox tb_provincia_ie;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox tb_distrito_ie;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox tb_otroRec_estudiante;
+        private System.Windows.Forms.CheckBox cb_otroRec_estudiante;
+        private System.Windows.Forms.CheckBox cb_premioexce_estudiante;
+        private System.Windows.Forms.TextBox tb_dir_ie;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox tb_nombre_ie;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox cb_modalidad;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cb_ciclo;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cb_grado;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cb_nivel;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.PictureBox pb_foto;
+        private System.Windows.Forms.TextBox tb_dir_estudiante;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tb_cel_estudiante;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtp_nac_estudiante;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_sexo_estudiante;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tb_edad_estudiante;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_nom_estudiante;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_apell_estudiante;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_codigoMatricula;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_dniEstudiante;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Button button4;
