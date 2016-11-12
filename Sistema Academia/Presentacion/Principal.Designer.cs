@@ -36,7 +36,7 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.tb_deudaFinal = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.Pago = new System.Windows.Forms.GroupBox();
+            this.grB_pago = new System.Windows.Forms.GroupBox();
             this.label25 = new System.Windows.Forms.Label();
             this.tb_pago_parte = new System.Windows.Forms.TextBox();
             this.rb_pago_total = new System.Windows.Forms.RadioButton();
@@ -66,8 +66,8 @@
             this.tb_distrito_ie = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.tb_otroRec_estudiante = new System.Windows.Forms.TextBox();
-            this.cb_otroRec_estudiante = new System.Windows.Forms.CheckBox();
-            this.cb_premioexce_estudiante = new System.Windows.Forms.CheckBox();
+            this.chekB_otroRec_estudiante = new System.Windows.Forms.CheckBox();
+            this.checkB_premioexce_estudiante = new System.Windows.Forms.CheckBox();
             this.tb_dir_ie = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.tb_nombre_ie = new System.Windows.Forms.TextBox();
@@ -148,10 +148,12 @@
             this.label32 = new System.Windows.Forms.Label();
             this.page_Reportes = new System.Windows.Forms.TabPage();
             this.page_horarios = new System.Windows.Forms.TabPage();
+            this.tb_costoNeto = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
             this.page_matricula.SuspendLayout();
             this.matricula.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.Pago.SuspendLayout();
+            this.grB_pago.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -207,7 +209,7 @@
             // 
             // btn_limpiar
             // 
-            this.btn_limpiar.Location = new System.Drawing.Point(724, 405);
+            this.btn_limpiar.Location = new System.Drawing.Point(724, 430);
             this.btn_limpiar.Name = "btn_limpiar";
             this.btn_limpiar.Size = new System.Drawing.Size(338, 56);
             this.btn_limpiar.TabIndex = 35;
@@ -216,7 +218,7 @@
             // 
             // btn_registrar
             // 
-            this.btn_registrar.Location = new System.Drawing.Point(724, 342);
+            this.btn_registrar.Location = new System.Drawing.Point(724, 367);
             this.btn_registrar.Name = "btn_registrar";
             this.btn_registrar.Size = new System.Drawing.Size(338, 56);
             this.btn_registrar.TabIndex = 34;
@@ -225,7 +227,7 @@
             // 
             // btn_imprimir
             // 
-            this.btn_imprimir.Location = new System.Drawing.Point(724, 280);
+            this.btn_imprimir.Location = new System.Drawing.Point(724, 305);
             this.btn_imprimir.Name = "btn_imprimir";
             this.btn_imprimir.Size = new System.Drawing.Size(338, 56);
             this.btn_imprimir.TabIndex = 33;
@@ -234,9 +236,11 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.tb_costoNeto);
+            this.groupBox5.Controls.Add(this.label42);
             this.groupBox5.Controls.Add(this.tb_deudaFinal);
             this.groupBox5.Controls.Add(this.label26);
-            this.groupBox5.Controls.Add(this.Pago);
+            this.groupBox5.Controls.Add(this.grB_pago);
             this.groupBox5.Controls.Add(this.tb_desc_otro);
             this.groupBox5.Controls.Add(this.rb_desc_otro);
             this.groupBox5.Controls.Add(this.rb_desc_mediaBec);
@@ -247,7 +251,7 @@
             this.groupBox5.Controls.Add(this.label23);
             this.groupBox5.Location = new System.Drawing.Point(724, 40);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(341, 220);
+            this.groupBox5.Size = new System.Drawing.Size(341, 256);
             this.groupBox5.TabIndex = 32;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Pago de Matrícula";
@@ -255,7 +259,7 @@
             // tb_deudaFinal
             // 
             this.tb_deudaFinal.Enabled = false;
-            this.tb_deudaFinal.Location = new System.Drawing.Point(258, 194);
+            this.tb_deudaFinal.Location = new System.Drawing.Point(262, 218);
             this.tb_deudaFinal.Name = "tb_deudaFinal";
             this.tb_deudaFinal.Size = new System.Drawing.Size(60, 20);
             this.tb_deudaFinal.TabIndex = 43;
@@ -263,24 +267,24 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(154, 197);
+            this.label26.Location = new System.Drawing.Point(189, 221);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(99, 13);
+            this.label26.Size = new System.Drawing.Size(67, 13);
             this.label26.TabIndex = 42;
-            this.label26.Text = "Costo de matrícula:";
+            this.label26.Text = "Deuda Final:";
             // 
-            // Pago
+            // grB_pago
             // 
-            this.Pago.Controls.Add(this.label25);
-            this.Pago.Controls.Add(this.tb_pago_parte);
-            this.Pago.Controls.Add(this.rb_pago_total);
-            this.Pago.Controls.Add(this.rb_pago_parte);
-            this.Pago.Location = new System.Drawing.Point(141, 58);
-            this.Pago.Name = "Pago";
-            this.Pago.Size = new System.Drawing.Size(177, 130);
-            this.Pago.TabIndex = 41;
-            this.Pago.TabStop = false;
-            this.Pago.Text = "Pago";
+            this.grB_pago.Controls.Add(this.label25);
+            this.grB_pago.Controls.Add(this.tb_pago_parte);
+            this.grB_pago.Controls.Add(this.rb_pago_total);
+            this.grB_pago.Controls.Add(this.rb_pago_parte);
+            this.grB_pago.Location = new System.Drawing.Point(145, 82);
+            this.grB_pago.Name = "grB_pago";
+            this.grB_pago.Size = new System.Drawing.Size(177, 130);
+            this.grB_pago.TabIndex = 41;
+            this.grB_pago.TabStop = false;
+            this.grB_pago.Text = "Pago";
             // 
             // label25
             // 
@@ -298,6 +302,7 @@
             this.tb_pago_parte.Name = "tb_pago_parte";
             this.tb_pago_parte.Size = new System.Drawing.Size(76, 20);
             this.tb_pago_parte.TabIndex = 42;
+            this.tb_pago_parte.TextChanged += new System.EventHandler(this.tb_pago_parte_TextChanged);
             // 
             // rb_pago_total
             // 
@@ -310,6 +315,7 @@
             this.rb_pago_total.TabStop = true;
             this.rb_pago_total.Text = "Total";
             this.rb_pago_total.UseVisualStyleBackColor = true;
+            this.rb_pago_total.CheckedChanged += new System.EventHandler(this.rb_pago_total_CheckedChanged);
             // 
             // rb_pago_parte
             // 
@@ -320,49 +326,54 @@
             this.rb_pago_parte.TabIndex = 42;
             this.rb_pago_parte.Text = "Parte";
             this.rb_pago_parte.UseVisualStyleBackColor = true;
+            this.rb_pago_parte.CheckedChanged += new System.EventHandler(this.rb_pago_parte_CheckedChanged);
             // 
             // tb_desc_otro
             // 
             this.tb_desc_otro.Enabled = false;
-            this.tb_desc_otro.Location = new System.Drawing.Point(32, 175);
+            this.tb_desc_otro.Location = new System.Drawing.Point(36, 199);
             this.tb_desc_otro.Name = "tb_desc_otro";
             this.tb_desc_otro.Size = new System.Drawing.Size(76, 20);
             this.tb_desc_otro.TabIndex = 40;
+            this.tb_desc_otro.TextChanged += new System.EventHandler(this.tb_desc_otro_TextChanged);
             // 
             // rb_desc_otro
             // 
             this.rb_desc_otro.AutoSize = true;
-            this.rb_desc_otro.Location = new System.Drawing.Point(32, 152);
+            this.rb_desc_otro.Location = new System.Drawing.Point(36, 176);
             this.rb_desc_otro.Name = "rb_desc_otro";
             this.rb_desc_otro.Size = new System.Drawing.Size(100, 17);
             this.rb_desc_otro.TabIndex = 39;
             this.rb_desc_otro.Text = "Otro Descuento";
             this.rb_desc_otro.UseVisualStyleBackColor = true;
+            this.rb_desc_otro.CheckedChanged += new System.EventHandler(this.rb_desc_otro_CheckedChanged);
             // 
             // rb_desc_mediaBec
             // 
             this.rb_desc_mediaBec.AutoSize = true;
-            this.rb_desc_mediaBec.Location = new System.Drawing.Point(32, 129);
+            this.rb_desc_mediaBec.Location = new System.Drawing.Point(36, 153);
             this.rb_desc_mediaBec.Name = "rb_desc_mediaBec";
             this.rb_desc_mediaBec.Size = new System.Drawing.Size(82, 17);
             this.rb_desc_mediaBec.TabIndex = 38;
             this.rb_desc_mediaBec.Text = "Media Beca";
             this.rb_desc_mediaBec.UseVisualStyleBackColor = true;
+            this.rb_desc_mediaBec.CheckedChanged += new System.EventHandler(this.rb_desc_mediaBec_CheckedChanged);
             // 
             // rb_desc_becaComp
             // 
             this.rb_desc_becaComp.AutoSize = true;
-            this.rb_desc_becaComp.Location = new System.Drawing.Point(32, 106);
+            this.rb_desc_becaComp.Location = new System.Drawing.Point(36, 130);
             this.rb_desc_becaComp.Name = "rb_desc_becaComp";
             this.rb_desc_becaComp.Size = new System.Drawing.Size(97, 17);
             this.rb_desc_becaComp.TabIndex = 37;
             this.rb_desc_becaComp.Text = "Beca Completa";
             this.rb_desc_becaComp.UseVisualStyleBackColor = true;
+            this.rb_desc_becaComp.CheckedChanged += new System.EventHandler(this.rb_desc_becaComp_CheckedChanged);
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(18, 58);
+            this.label24.Location = new System.Drawing.Point(22, 82);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(62, 13);
             this.label24.TabIndex = 36;
@@ -372,30 +383,32 @@
             // 
             this.rb_desc_ninguno.AutoSize = true;
             this.rb_desc_ninguno.Checked = true;
-            this.rb_desc_ninguno.Location = new System.Drawing.Point(32, 83);
+            this.rb_desc_ninguno.Location = new System.Drawing.Point(36, 107);
             this.rb_desc_ninguno.Name = "rb_desc_ninguno";
             this.rb_desc_ninguno.Size = new System.Drawing.Size(65, 17);
             this.rb_desc_ninguno.TabIndex = 35;
             this.rb_desc_ninguno.TabStop = true;
             this.rb_desc_ninguno.Text = "Ninguno";
             this.rb_desc_ninguno.UseVisualStyleBackColor = true;
+            this.rb_desc_ninguno.CheckedChanged += new System.EventHandler(this.rb_desc_ninguno_CheckedChanged);
             // 
             // tb_costo_matricula
             // 
             this.tb_costo_matricula.Enabled = false;
-            this.tb_costo_matricula.Location = new System.Drawing.Point(122, 19);
+            this.tb_costo_matricula.Location = new System.Drawing.Point(149, 19);
             this.tb_costo_matricula.Name = "tb_costo_matricula";
             this.tb_costo_matricula.Size = new System.Drawing.Size(60, 20);
             this.tb_costo_matricula.TabIndex = 34;
+            this.tb_costo_matricula.TextChanged += new System.EventHandler(this.tb_costo_matricula_TextChanged);
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Location = new System.Drawing.Point(18, 22);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(99, 13);
+            this.label23.Size = new System.Drawing.Size(127, 13);
             this.label23.TabIndex = 33;
-            this.label23.Text = "Costo de matrícula:";
+            this.label23.Text = "Costo de matrícula Bruto:";
             // 
             // groupBox4
             // 
@@ -487,8 +500,8 @@
             this.groupBox3.Controls.Add(this.tb_distrito_ie);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.tb_otroRec_estudiante);
-            this.groupBox3.Controls.Add(this.cb_otroRec_estudiante);
-            this.groupBox3.Controls.Add(this.cb_premioexce_estudiante);
+            this.groupBox3.Controls.Add(this.chekB_otroRec_estudiante);
+            this.groupBox3.Controls.Add(this.checkB_premioexce_estudiante);
             this.groupBox3.Controls.Add(this.tb_dir_ie);
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.tb_nombre_ie);
@@ -556,25 +569,26 @@
             this.tb_otroRec_estudiante.Size = new System.Drawing.Size(86, 20);
             this.tb_otroRec_estudiante.TabIndex = 26;
             // 
-            // cb_otroRec_estudiante
+            // chekB_otroRec_estudiante
             // 
-            this.cb_otroRec_estudiante.AutoSize = true;
-            this.cb_otroRec_estudiante.Location = new System.Drawing.Point(166, 106);
-            this.cb_otroRec_estudiante.Name = "cb_otroRec_estudiante";
-            this.cb_otroRec_estudiante.Size = new System.Drawing.Size(54, 17);
-            this.cb_otroRec_estudiante.TabIndex = 25;
-            this.cb_otroRec_estudiante.Text = "Otros:";
-            this.cb_otroRec_estudiante.UseVisualStyleBackColor = true;
+            this.chekB_otroRec_estudiante.AutoSize = true;
+            this.chekB_otroRec_estudiante.Location = new System.Drawing.Point(166, 106);
+            this.chekB_otroRec_estudiante.Name = "chekB_otroRec_estudiante";
+            this.chekB_otroRec_estudiante.Size = new System.Drawing.Size(54, 17);
+            this.chekB_otroRec_estudiante.TabIndex = 25;
+            this.chekB_otroRec_estudiante.Text = "Otros:";
+            this.chekB_otroRec_estudiante.UseVisualStyleBackColor = true;
+            this.chekB_otroRec_estudiante.CheckedChanged += new System.EventHandler(this.chekB_otroRec_estudiante_CheckedChanged);
             // 
-            // cb_premioexce_estudiante
+            // checkB_premioexce_estudiante
             // 
-            this.cb_premioexce_estudiante.AutoSize = true;
-            this.cb_premioexce_estudiante.Location = new System.Drawing.Point(21, 107);
-            this.cb_premioexce_estudiante.Name = "cb_premioexce_estudiante";
-            this.cb_premioexce_estudiante.Size = new System.Drawing.Size(128, 17);
-            this.cb_premioexce_estudiante.TabIndex = 24;
-            this.cb_premioexce_estudiante.Text = "Premio de Excelencia";
-            this.cb_premioexce_estudiante.UseVisualStyleBackColor = true;
+            this.checkB_premioexce_estudiante.AutoSize = true;
+            this.checkB_premioexce_estudiante.Location = new System.Drawing.Point(21, 107);
+            this.checkB_premioexce_estudiante.Name = "checkB_premioexce_estudiante";
+            this.checkB_premioexce_estudiante.Size = new System.Drawing.Size(128, 17);
+            this.checkB_premioexce_estudiante.TabIndex = 24;
+            this.checkB_premioexce_estudiante.Text = "Premio de Excelencia";
+            this.checkB_premioexce_estudiante.UseVisualStyleBackColor = true;
             // 
             // tb_dir_ie
             // 
@@ -644,6 +658,7 @@
             // 
             // cb_ciclo
             // 
+            this.cb_ciclo.Enabled = false;
             this.cb_ciclo.FormattingEnabled = true;
             this.cb_ciclo.Location = new System.Drawing.Point(16, 126);
             this.cb_ciclo.Name = "cb_ciclo";
@@ -666,6 +681,7 @@
             this.cb_grado.Name = "cb_grado";
             this.cb_grado.Size = new System.Drawing.Size(56, 21);
             this.cb_grado.TabIndex = 23;
+            this.cb_grado.SelectedIndexChanged += new System.EventHandler(this.cb_grado_SelectedIndexChanged);
             // 
             // label11
             // 
@@ -683,6 +699,7 @@
             this.cb_nivel.Name = "cb_nivel";
             this.cb_nivel.Size = new System.Drawing.Size(121, 21);
             this.cb_nivel.TabIndex = 21;
+            this.cb_nivel.SelectedIndexChanged += new System.EventHandler(this.cb_nivel_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -1320,6 +1337,24 @@
             this.page_horarios.Text = "Horarios";
             this.page_horarios.UseVisualStyleBackColor = true;
             // 
+            // tb_costoNeto
+            // 
+            this.tb_costoNeto.Enabled = false;
+            this.tb_costoNeto.Location = new System.Drawing.Point(149, 45);
+            this.tb_costoNeto.Name = "tb_costoNeto";
+            this.tb_costoNeto.Size = new System.Drawing.Size(60, 20);
+            this.tb_costoNeto.TabIndex = 45;
+            this.tb_costoNeto.TextChanged += new System.EventHandler(this.tb_costoNeto_TextChanged);
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(18, 48);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(125, 13);
+            this.label42.TabIndex = 44;
+            this.label42.Text = "Costo de matrícula Neto:";
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1333,8 +1368,8 @@
             this.matricula.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.Pago.ResumeLayout(false);
-            this.Pago.PerformLayout();
+            this.grB_pago.ResumeLayout(false);
+            this.grB_pago.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -1378,7 +1413,7 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox tb_deudaFinal;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.GroupBox Pago;
+        private System.Windows.Forms.GroupBox grB_pago;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox tb_pago_parte;
         private System.Windows.Forms.RadioButton rb_pago_total;
@@ -1408,8 +1443,8 @@
         private System.Windows.Forms.TextBox tb_distrito_ie;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox tb_otroRec_estudiante;
-        private System.Windows.Forms.CheckBox cb_otroRec_estudiante;
-        private System.Windows.Forms.CheckBox cb_premioexce_estudiante;
+        private System.Windows.Forms.CheckBox chekB_otroRec_estudiante;
+        private System.Windows.Forms.CheckBox checkB_premioexce_estudiante;
         private System.Windows.Forms.TextBox tb_dir_ie;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox tb_nombre_ie;
@@ -1486,5 +1521,7 @@
         private System.Windows.Forms.RadioButton radioButton7;
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox tb_costoNeto;
+        private System.Windows.Forms.Label label42;
     }
 }
