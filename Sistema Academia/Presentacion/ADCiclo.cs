@@ -36,8 +36,41 @@ namespace Presentacion
         }
 
         public string obtenerNombreCiclo() {
+            SqlConnection conexion = conectar.obtenerConexion();
 
-            return "2016-2";
+            string consulta = "select top(1) cic_nombre from ciclo where estado='a' order by cic_nombre desc ";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+
+            SqlDataReader dr = comando.ExecuteReader();
+            string ciclo = "";
+            while (dr.Read())
+            {
+                 ciclo = (string)dr["cic_nombre"];
+            }
+            
+            conexion.Dispose();
+            conexion.Close();
+
+            //ciclo tiene el valor del ultimo ciclo registrado.
+
+            string año = ciclo.Substring(0,4);
+            string num = ciclo.Substring(5, 1);
+
+            DateTime hoy = DateTime.Now;
+            string añoActual = hoy.Year.ToString();
+
+
+
+            if (año == añoActual)
+            {
+                //si es el mismo año
+                ciclo = añoActual +"-"+ (Int32.Parse(num) + 1).ToString();
+            }
+            else {
+                //si el ultimo ciclo registrado no es del año actual
+                ciclo = añoActual + "-1";
+            }
+            return ciclo;
         }
 
 
