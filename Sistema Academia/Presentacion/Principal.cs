@@ -14,6 +14,7 @@ namespace Presentacion
     {
         static ADCiclo cicloAD = new ADCiclo();
         static ADApoderado apoderadoAD = new ADApoderado();
+        static ADColegio colegioAD = new ADColegio();
         String ciclo { get; set; }
         MCiclo cicloActual = new MCiclo();
         bool nuevoApoderado = true;
@@ -29,6 +30,8 @@ namespace Presentacion
 
             obtenerDetalleDeCiclo();
             llenarCamposPorDefecto();
+
+            colegioAD.autocompletarColegio(tb_nombre_ie);
         }
 
         private void obtenerDetalleDeCiclo()
@@ -438,6 +441,94 @@ namespace Presentacion
             tb_apo_apell.Clear();
             tb_apo_nombres.Clear();
             tb_apo_cel.Clear();
+        }
+
+        private void btn_registrar_Click(object sender, EventArgs e)
+        {
+            conforme = true;
+
+            string col_nombre = "";
+            string col_direccion = "";
+            string col_distrito = "";
+            string col_provincia= "";
+            string col_departamento = "";
+
+            //validamos informacion Colegio: nombre
+            if (tb_nombre_ie.Text.ToString().Length >= 1)
+            {
+                col_nombre = tb_nombre_ie.Text.ToUpper();
+            }
+            else {
+                MessageBox.Show("El campo nombre de Institución Educativa no puede estar vacio");
+                conforme = false;
+            }
+
+            //validamos informacion Colegio: dirección
+            if (tb_dir_ie.Text.ToString().Length >= 1)
+            {
+                col_direccion = tb_dir_ie.Text.ToUpper();
+            }
+
+            //validamos informacion Colegio: distrito 
+            if (tb_distrito_ie.Text.ToString().Length >= 1) {
+                col_distrito = tb_distrito_ie.Text.ToUpper();
+            }
+
+            //validamos informacion Colegio: provincia 
+            if (tb_provincia_ie.Text.ToString().Length >= 1) {
+                col_provincia = tb_provincia_ie.Text.ToUpper();
+            }
+
+            //validamos informacion Colegio: departamento 
+            if (tb_dep_ie.Text.ToString().Length >= 1) {
+                col_departamento = tb_dep_ie.Text.ToUpper();
+            }
+
+            MColegio col = new MColegio(0,col_nombre, col_direccion, col_distrito, col_provincia, col_departamento);
+            if (conforme) {
+                bool registrado = colegioAD.registrarColegio(col);
+
+                if (registrado)
+                {
+                    //mesaje de prueba temporar (eliminarrr)
+                    MessageBox.Show("Colegio Registrado");
+                }
+                else {
+                    MessageBox.Show("Error al registrar colegio");
+                }
+            }
+        }
+
+        private void tb_nombre_ie_TextChanged(object sender, EventArgs e)
+        {
+            limpiarCamposColegio();
+            if (tb_nombre_ie.Text.ToString().Length >= 1) {
+                MColegio colBuscado = colegioAD.buscarColegio(tb_nombre_ie.Text);
+
+                if (colBuscado != null)
+                {
+                    nuevoColegio = false;
+
+                    //lleno campos con información del colegio
+                    tb_dir_ie.Text = colBuscado.Ubicacion;
+                    tb_distrito_ie.Text = colBuscado.Distrito;
+                    tb_provincia_ie.Text = colBuscado.Provincia;
+                    tb_dep_ie.Text = colBuscado.Departamento;
+                }
+                else {
+                    nuevoColegio = true;
+                }
+            }
+
+            
+        }
+
+        private void limpiarCamposColegio()
+        {
+            tb_dir_ie.Clear();
+            tb_distrito_ie.Clear();
+            tb_provincia_ie.Clear();
+            tb_dep_ie.Clear();
         }
     }
 }

@@ -226,6 +226,7 @@
             this.btn_registrar.TabIndex = 34;
             this.btn_registrar.Text = "Registrar";
             this.btn_registrar.UseVisualStyleBackColor = true;
+            this.btn_registrar.Click += new System.EventHandler(this.btn_registrar_Click);
             // 
             // btn_imprimir
             // 
@@ -261,6 +262,7 @@
             // 
             // tb_costoNeto
             // 
+            this.tb_costoNeto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_costoNeto.Enabled = false;
             this.tb_costoNeto.Location = new System.Drawing.Point(149, 45);
             this.tb_costoNeto.Name = "tb_costoNeto";
@@ -279,6 +281,7 @@
             // 
             // tb_deudaFinal
             // 
+            this.tb_deudaFinal.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_deudaFinal.Enabled = false;
             this.tb_deudaFinal.Location = new System.Drawing.Point(262, 218);
             this.tb_deudaFinal.Name = "tb_deudaFinal";
@@ -318,6 +321,7 @@
             // 
             // tb_pago_parte
             // 
+            this.tb_pago_parte.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_pago_parte.Enabled = false;
             this.tb_pago_parte.Location = new System.Drawing.Point(89, 45);
             this.tb_pago_parte.Name = "tb_pago_parte";
@@ -351,6 +355,7 @@
             // 
             // tb_desc_otro
             // 
+            this.tb_desc_otro.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_desc_otro.Enabled = false;
             this.tb_desc_otro.Location = new System.Drawing.Point(36, 199);
             this.tb_desc_otro.Name = "tb_desc_otro";
@@ -415,6 +420,7 @@
             // 
             // tb_costo_matricula
             // 
+            this.tb_costo_matricula.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_costo_matricula.Enabled = false;
             this.tb_costo_matricula.Location = new System.Drawing.Point(149, 19);
             this.tb_costo_matricula.Name = "tb_costo_matricula";
@@ -450,6 +456,7 @@
             // 
             // tb_apo_cel
             // 
+            this.tb_apo_cel.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_apo_cel.Location = new System.Drawing.Point(16, 177);
             this.tb_apo_cel.Name = "tb_apo_cel";
             this.tb_apo_cel.Size = new System.Drawing.Size(168, 20);
@@ -466,6 +473,7 @@
             // 
             // tb_apo_nombres
             // 
+            this.tb_apo_nombres.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_apo_nombres.Location = new System.Drawing.Point(16, 134);
             this.tb_apo_nombres.Name = "tb_apo_nombres";
             this.tb_apo_nombres.Size = new System.Drawing.Size(168, 20);
@@ -482,6 +490,7 @@
             // 
             // tb_apo_apell
             // 
+            this.tb_apo_apell.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_apo_apell.Location = new System.Drawing.Point(16, 91);
             this.tb_apo_apell.Name = "tb_apo_apell";
             this.tb_apo_apell.Size = new System.Drawing.Size(168, 20);
@@ -498,6 +507,7 @@
             // 
             // tb_apo_dni
             // 
+            this.tb_apo_dni.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_apo_dni.Location = new System.Drawing.Point(16, 44);
             this.tb_apo_dni.Name = "tb_apo_dni";
             this.tb_apo_dni.Size = new System.Drawing.Size(168, 20);
@@ -537,6 +547,7 @@
             // 
             // tb_dep_ie
             // 
+            this.tb_dep_ie.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_dep_ie.Location = new System.Drawing.Point(267, 129);
             this.tb_dep_ie.Name = "tb_dep_ie";
             this.tb_dep_ie.Size = new System.Drawing.Size(163, 20);
@@ -553,6 +564,7 @@
             // 
             // tb_provincia_ie
             // 
+            this.tb_provincia_ie.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_provincia_ie.Location = new System.Drawing.Point(267, 80);
             this.tb_provincia_ie.Name = "tb_provincia_ie";
             this.tb_provincia_ie.Size = new System.Drawing.Size(163, 20);
@@ -569,6 +581,7 @@
             // 
             // tb_distrito_ie
             // 
+            this.tb_distrito_ie.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_distrito_ie.Location = new System.Drawing.Point(267, 37);
             this.tb_distrito_ie.Name = "tb_distrito_ie";
             this.tb_distrito_ie.Size = new System.Drawing.Size(163, 20);
@@ -585,6 +598,7 @@
             // 
             // tb_otroRec_estudiante
             // 
+            this.tb_otroRec_estudiante.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_otroRec_estudiante.Enabled = false;
             this.tb_otroRec_estudiante.Location = new System.Drawing.Point(166, 129);
             this.tb_otroRec_estudiante.Name = "tb_otroRec_estudiante";
@@ -614,6 +628,7 @@
             // 
             // tb_dir_ie
             // 
+            this.tb_dir_ie.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_dir_ie.Location = new System.Drawing.Point(21, 80);
             this.tb_dir_ie.Name = "tb_dir_ie";
             this.tb_dir_ie.Size = new System.Drawing.Size(231, 20);
@@ -630,10 +645,14 @@
             // 
             // tb_nombre_ie
             // 
+            this.tb_nombre_ie.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.tb_nombre_ie.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.tb_nombre_ie.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_nombre_ie.Location = new System.Drawing.Point(21, 37);
             this.tb_nombre_ie.Name = "tb_nombre_ie";
             this.tb_nombre_ie.Size = new System.Drawing.Size(231, 20);
             this.tb_nombre_ie.TabIndex = 21;
+            this.tb_nombre_ie.TextChanged += new System.EventHandler(this.tb_nombre_ie_TextChanged);
             // 
             // label14
             // 
@@ -768,6 +787,7 @@
             // 
             // tb_dir_estudiante
             // 
+            this.tb_dir_estudiante.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_dir_estudiante.Location = new System.Drawing.Point(21, 211);
             this.tb_dir_estudiante.Name = "tb_dir_estudiante";
             this.tb_dir_estudiante.Size = new System.Drawing.Size(231, 20);
@@ -784,6 +804,7 @@
             // 
             // tb_cel_estudiante
             // 
+            this.tb_cel_estudiante.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_cel_estudiante.Location = new System.Drawing.Point(131, 169);
             this.tb_cel_estudiante.Name = "tb_cel_estudiante";
             this.tb_cel_estudiante.Size = new System.Drawing.Size(121, 20);
@@ -834,6 +855,7 @@
             // 
             // tb_edad_estudiante
             // 
+            this.tb_edad_estudiante.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_edad_estudiante.Location = new System.Drawing.Point(21, 126);
             this.tb_edad_estudiante.Name = "tb_edad_estudiante";
             this.tb_edad_estudiante.Size = new System.Drawing.Size(68, 20);
@@ -850,6 +872,7 @@
             // 
             // tb_nom_estudiante
             // 
+            this.tb_nom_estudiante.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_nom_estudiante.Location = new System.Drawing.Point(21, 82);
             this.tb_nom_estudiante.Name = "tb_nom_estudiante";
             this.tb_nom_estudiante.Size = new System.Drawing.Size(231, 20);
@@ -866,6 +889,7 @@
             // 
             // tb_apell_estudiante
             // 
+            this.tb_apell_estudiante.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_apell_estudiante.Location = new System.Drawing.Point(21, 38);
             this.tb_apell_estudiante.Name = "tb_apell_estudiante";
             this.tb_apell_estudiante.Size = new System.Drawing.Size(231, 20);
@@ -882,6 +906,7 @@
             // 
             // tb_codigoMatricula
             // 
+            this.tb_codigoMatricula.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_codigoMatricula.Enabled = false;
             this.tb_codigoMatricula.Location = new System.Drawing.Point(589, 8);
             this.tb_codigoMatricula.Name = "tb_codigoMatricula";
