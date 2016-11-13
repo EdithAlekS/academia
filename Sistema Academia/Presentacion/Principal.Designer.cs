@@ -34,6 +34,8 @@
             this.btn_registrar = new System.Windows.Forms.Button();
             this.btn_imprimir = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.tb_costoNeto = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
             this.tb_deudaFinal = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.grB_pago = new System.Windows.Forms.GroupBox();
@@ -148,8 +150,8 @@
             this.label32 = new System.Windows.Forms.Label();
             this.page_Reportes = new System.Windows.Forms.TabPage();
             this.page_horarios = new System.Windows.Forms.TabPage();
-            this.tb_costoNeto = new System.Windows.Forms.TextBox();
-            this.label42 = new System.Windows.Forms.Label();
+            this.btn_img = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.page_matricula.SuspendLayout();
             this.matricula.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -233,6 +235,7 @@
             this.btn_imprimir.TabIndex = 33;
             this.btn_imprimir.Text = "Imprimir Ficha";
             this.btn_imprimir.UseVisualStyleBackColor = true;
+            this.btn_imprimir.Click += new System.EventHandler(this.btn_imprimir_Click);
             // 
             // groupBox5
             // 
@@ -255,6 +258,24 @@
             this.groupBox5.TabIndex = 32;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Pago de Matrícula";
+            // 
+            // tb_costoNeto
+            // 
+            this.tb_costoNeto.Enabled = false;
+            this.tb_costoNeto.Location = new System.Drawing.Point(149, 45);
+            this.tb_costoNeto.Name = "tb_costoNeto";
+            this.tb_costoNeto.Size = new System.Drawing.Size(60, 20);
+            this.tb_costoNeto.TabIndex = 45;
+            this.tb_costoNeto.TextChanged += new System.EventHandler(this.tb_costoNeto_TextChanged);
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(18, 48);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(125, 13);
+            this.label42.TabIndex = 44;
+            this.label42.Text = "Costo de matrícula Neto:";
             // 
             // tb_deudaFinal
             // 
@@ -712,6 +733,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_img);
             this.groupBox1.Controls.Add(this.pb_foto);
             this.groupBox1.Controls.Add(this.tb_dir_estudiante);
             this.groupBox1.Controls.Add(this.label9);
@@ -739,6 +761,7 @@
             this.pb_foto.Location = new System.Drawing.Point(267, 38);
             this.pb_foto.Name = "pb_foto";
             this.pb_foto.Size = new System.Drawing.Size(163, 193);
+            this.pb_foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_foto.TabIndex = 19;
             this.pb_foto.TabStop = false;
             // 
@@ -1337,23 +1360,19 @@
             this.page_horarios.Text = "Horarios";
             this.page_horarios.UseVisualStyleBackColor = true;
             // 
-            // tb_costoNeto
+            // btn_img
             // 
-            this.tb_costoNeto.Enabled = false;
-            this.tb_costoNeto.Location = new System.Drawing.Point(149, 45);
-            this.tb_costoNeto.Name = "tb_costoNeto";
-            this.tb_costoNeto.Size = new System.Drawing.Size(60, 20);
-            this.tb_costoNeto.TabIndex = 45;
-            this.tb_costoNeto.TextChanged += new System.EventHandler(this.tb_costoNeto_TextChanged);
+            this.btn_img.Location = new System.Drawing.Point(267, 238);
+            this.btn_img.Name = "btn_img";
+            this.btn_img.Size = new System.Drawing.Size(163, 23);
+            this.btn_img.TabIndex = 20;
+            this.btn_img.Text = "Cargar Imagen";
+            this.btn_img.UseVisualStyleBackColor = true;
+            this.btn_img.Click += new System.EventHandler(this.btn_img_Click);
             // 
-            // label42
+            // openFileDialog1
             // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(18, 48);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(125, 13);
-            this.label42.TabIndex = 44;
-            this.label42.Text = "Costo de matrícula Neto:";
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Principal
             // 
@@ -1523,5 +1542,7 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.TextBox tb_costoNeto;
         private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Button btn_img;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

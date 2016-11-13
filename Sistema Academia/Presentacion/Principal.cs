@@ -13,8 +13,11 @@ namespace Presentacion
     public partial class Principal : Form
     {
         static ADCiclo cicloAD = new ADCiclo();
+        static ADApoderado apoderadoAD = new ADApoderado();
         String ciclo { get; set; }
         MCiclo cicloActual = new MCiclo();
+
+        static bool conforme = false;
 
         public Principal(string nom_ciclo)
         {
@@ -272,6 +275,131 @@ namespace Presentacion
             if (rb_pago_total.Checked) {
                 tb_deudaFinal.Text = "0";
             }
+        }
+
+        private void btn_img_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.openFileDialog1.ShowDialog();
+                if (this.openFileDialog1.FileName.Equals("") == false)
+                {
+                    pb_foto.Load(this.openFileDialog1.FileName);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo cargar la imagen: " + ex.ToString());
+            }
+        }
+
+        private void btn_imprimir_Click(object sender, EventArgs e)
+        {
+            //para validar la información
+            conforme = true;
+
+            string apo_dni = "";
+            string apo_apellidos="";
+            string apo_nombres="";
+            string apo_celular = "";
+            //validamos la información ingresada DNI
+            if (tb_apo_dni.Text.ToString().Length >= 1)
+            {
+                
+
+                if (tb_apo_dni.Text.ToString().Length == 8)
+                {
+                    
+                    int num;
+                    bool onlyNum = Int32.TryParse(tb_apo_dni.Text.Trim(), out num);
+
+                    if (onlyNum)
+                    {
+                        apo_dni = tb_apo_dni.Text;
+                        
+                    }
+                    else {
+                        MessageBox.Show("El DNI del Apoderado no puede contener letras u otros caracteres que no sean números");
+                        conforme = false;
+                    }
+                }
+                else {
+                    MessageBox.Show("Numero de DNI del apoderado invalido, número de caracteres tiene que ser 8");
+                    conforme = false;
+                }
+            }
+            else {
+                MessageBox.Show("Falta ingresar el DNI del Apoderado");
+                conforme = false;
+            }
+
+            //validamos la información ingresada Apellidos
+
+            if (tb_apo_apell.Text.ToString().Length >= 1)
+            {
+                apo_apellidos = tb_apo_apell.Text.ToUpper();
+                
+            }
+            else {
+                MessageBox.Show("El campo Apellidos del Apoderado no puede ser nulo");
+                conforme = false;
+            }
+
+            //validamos la información ingresada Nombres
+
+            if (tb_apo_nombres.Text.ToString().Length >= 1)
+            {
+                apo_nombres = tb_apo_nombres.Text.ToUpper();
+                
+            }
+            else {
+                MessageBox.Show("El campo Nombres del Apoderado no puede ser nulo");
+                conforme = false;
+            }
+
+            //validamos la información ingresada Celular
+
+            if (tb_apo_cel.Text.ToString().Length >= 1)
+            {
+                if (tb_apo_cel.Text.ToString().Length >= 6) {
+
+                    int num;
+                    bool onlyNum = Int32.TryParse(tb_apo_cel.Text.Trim(), out num);
+
+                    if (onlyNum)
+                    {
+                        apo_celular = tb_apo_cel.Text;
+                        
+                    }
+                    else
+                    {
+                        MessageBox.Show("El Celular del Apoderado no puede contener letras u otros caracteres que no sean números");
+                        conforme = false;
+                    }
+
+
+                }
+                else {
+                    MessageBox.Show("El celular o telefono del apoderado tiene que tener mínimo 6 caracteres");
+                    conforme = false;
+                }
+            }
+            
+          
+
+            MApoderado apo = new MApoderado(apo_dni, apo_apellidos, apo_nombres, apo_celular);
+
+            if (conforme) {
+                bool registrado = apoderadoAD.registrarApoderado(apo);
+
+                if (registrado) {
+                    MessageBox.Show("Apoderado Registrado Correctamente");
+                }
+            }
+                     
+                    
+           
+            
         }
     }
 }

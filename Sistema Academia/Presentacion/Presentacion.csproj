@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADApoderado.cs" />
     <Compile Include="ADCiclo.cs" />
+    <Compile Include="ADEstudiante.cs" />
     <Compile Include="MApoderado.cs" />
     <Compile Include="MCiclo.cs" />
     <Compile Include="conectar.cs" />

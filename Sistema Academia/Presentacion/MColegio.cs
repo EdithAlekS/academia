@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Presentacion
 {
-    class MColegio
+    public class MColegio
     {
+        public int Codigo { get; set; }
     }
 }
