@@ -64,7 +64,7 @@ namespace Presentacion
 
             //creamos lista de sexo y llenamos valores
             List<string> sexos = new List<string>();
-            sexos.Add("Masculido");
+            sexos.Add("Masculino");
             sexos.Add("Femenino");
 
             //asignamos lista al combo de sexo
@@ -258,9 +258,8 @@ namespace Presentacion
         private void tb_pago_parte_TextChanged(object sender, EventArgs e)
         {
             tb_deudaFinal.Text = tb_costoNeto.Text;
-            if (rb_pago_parte.Text.ToString().Length >= 1) {
+            if (tb_pago_parte.Text.ToString().Length >= 1) {
                 float costoNeto = float.Parse(tb_costoNeto.Text);
-                //observar error y dar soluci+on
                 float monto = float.Parse(tb_pago_parte.Text);
                 float deudaFinal = costoNeto - monto;
 
