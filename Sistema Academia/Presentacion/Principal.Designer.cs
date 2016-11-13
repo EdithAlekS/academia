@@ -502,6 +502,7 @@
             this.tb_apo_dni.Name = "tb_apo_dni";
             this.tb_apo_dni.Size = new System.Drawing.Size(168, 20);
             this.tb_apo_dni.TabIndex = 34;
+            this.tb_apo_dni.TextChanged += new System.EventHandler(this.tb_apo_dni_TextChanged);
             // 
             // label19
             // 

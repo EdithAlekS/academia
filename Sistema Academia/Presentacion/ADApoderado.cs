@@ -58,7 +58,7 @@ namespace Presentacion
                 comando.Parameters.AddWithValue("@_dni", dni);
                  SqlDataReader dr = comando.ExecuteReader();
 
-                List<MApoderado> apoderados = new List<MApoderado>();
+               
                 while (dr.Read())
                 {
                     string apellidos = (string)dr["apo_apellidos"];
@@ -66,15 +66,17 @@ namespace Presentacion
                     string celular = (string)dr["apo_celular"];
 
                     MApoderado temp = new MApoderado(dni, apellidos, nombres, celular);
-                    apoderados.Add(temp);
+                    return temp;
                 }
 
-                return apoderados[0];
+
+                return null;
 
             }
             catch (Exception e) {
                 MessageBox.Show(e.ToString());
                 return null;
+               
             }
         }
     }

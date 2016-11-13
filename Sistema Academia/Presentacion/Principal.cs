@@ -16,6 +16,9 @@ namespace Presentacion
         static ADApoderado apoderadoAD = new ADApoderado();
         String ciclo { get; set; }
         MCiclo cicloActual = new MCiclo();
+        bool nuevoApoderado = true;
+        bool nuevoEstudiante = true;
+        bool nuevoColegio = true;
 
         static bool conforme = false;
 
@@ -295,6 +298,9 @@ namespace Presentacion
 
         private void btn_imprimir_Click(object sender, EventArgs e)
         {
+
+            //codigo temporal, mover luego al registro correcto
+
             //para validar la información
             conforme = true;
 
@@ -400,6 +406,38 @@ namespace Presentacion
                     
            
             
+        }
+
+        private void tb_apo_dni_TextChanged(object sender, EventArgs e)
+        {
+            limpiarCamposApoderado();
+
+            if (tb_apo_dni.Text.ToString().Length == 8) {
+
+                MApoderado apo = apoderadoAD.buscarApoderado(tb_apo_dni.Text);
+
+                //apoderado encontrado
+                if (apo != null)
+                {
+                    nuevoApoderado = false;
+
+                    tb_apo_apell.Text = apo.Apellidos;
+                    tb_apo_nombres.Text = apo.Nombres;
+                    tb_apo_cel.Text = apo.Celular;
+                }
+                else {
+                    nuevoApoderado = true;
+                  
+                   
+                }
+            }
+        }
+
+        private void limpiarCamposApoderado()
+        {
+            tb_apo_apell.Clear();
+            tb_apo_nombres.Clear();
+            tb_apo_cel.Clear();
         }
     }
 }
