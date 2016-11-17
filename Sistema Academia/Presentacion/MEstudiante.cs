@@ -18,14 +18,14 @@ namespace Presentacion
         public string Celular { get; set; }
         public string Direccion { get; set; }
         
-        public char Excelencia { get; set; }
+        public string Excelencia { get; set; }
         public string OtroReconocimiento { get; set; }
       
 
         public MEstudiante() {
 
         }
-        public MEstudiante(string _dni, string _apellidos, string _nombres, string _sexo, int _edad, DateTime _nacimiento, string _celular, string _direccion, PictureBox _foto, char _excelencia, string _otroRec)
+        public MEstudiante(string _dni, string _apellidos, string _nombres, string _sexo, int _edad, DateTime _nacimiento, string _celular, string _direccion, PictureBox _foto, string _excelencia, string _otroRec)
         {
             Dni = _dni;
             Apellidos= _apellidos;

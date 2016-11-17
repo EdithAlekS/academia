@@ -142,7 +142,7 @@
             this.label34 = new System.Windows.Forms.Label();
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkB_consultar = new System.Windows.Forms.CheckBox();
             this.label33 = new System.Windows.Forms.Label();
             this.textBox28 = new System.Windows.Forms.TextBox();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
@@ -1107,7 +1107,7 @@
             this.page_asistencia.Controls.Add(this.label40);
             this.page_asistencia.Controls.Add(this.groupBox8);
             this.page_asistencia.Controls.Add(this.button5);
-            this.page_asistencia.Controls.Add(this.checkBox3);
+            this.page_asistencia.Controls.Add(this.checkB_consultar);
             this.page_asistencia.Controls.Add(this.label33);
             this.page_asistencia.Controls.Add(this.textBox28);
             this.page_asistencia.Controls.Add(this.radioButton8);
@@ -1312,15 +1312,15 @@
             this.button5.Text = "Marcar";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // checkB_consultar
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(254, 54);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(70, 17);
-            this.checkBox3.TabIndex = 6;
-            this.checkBox3.Text = "Consultar";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkB_consultar.AutoSize = true;
+            this.checkB_consultar.Location = new System.Drawing.Point(254, 54);
+            this.checkB_consultar.Name = "checkB_consultar";
+            this.checkB_consultar.Size = new System.Drawing.Size(70, 17);
+            this.checkB_consultar.TabIndex = 6;
+            this.checkB_consultar.Text = "Consultar";
+            this.checkB_consultar.UseVisualStyleBackColor = true;
             // 
             // label33
             // 
@@ -1560,7 +1560,7 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.TextBox textBox29;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkB_consultar;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.TextBox textBox28;
         private System.Windows.Forms.RadioButton radioButton8;

@@ -73,11 +73,18 @@ namespace Presentacion
 
             //creamos lista de sexo y llenamos valores
             List<string> sexos = new List<string>();
-            sexos.Add("Masculino");
-            sexos.Add("Femenino");
+            sexos.Add("MASCULINO");
+            sexos.Add("FEMENINO");
 
             //asignamos lista al combo de sexo
             cb_sexo_estudiante.DataSource = sexos;
+
+            //asignamos un año por deencot en fecha de nacimiento, son 15 menos del actual
+            DateTime fecha = dtp_nac_estudiante.Value.AddYears(-15);
+            dtp_nac_estudiante.Value = fecha;
+
+            //asignamos imagen de usuairo por defecto
+            pb_foto.Load(@"imagenes/masculino.jpg");
 
         }
 
@@ -543,7 +550,7 @@ namespace Presentacion
             DateTime est_fecha;
             string est_celular = "";
             string est_direccion = "";
-            char est_premio = 'n';
+            string est_premio ="NO";
             string est_otroRec = "";
 
             //validadción para el campo DNI del estudiante
@@ -575,6 +582,115 @@ namespace Presentacion
                 conforme = false;
             }
 
+
+            //validando campo de apellidos del Estudiante
+
+            if (tb_apell_estudiante.Text.ToString().Length >= 1)
+            {
+                est_apellidos = tb_apell_estudiante.Text;
+            }
+            else {
+                MessageBox.Show("El campo Apellidos del Estudiante no puede estar vacio");
+                conforme = false;
+            }
+
+
+            //validando campo de nombres del Estudiante
+
+            if (tb_nom_estudiante.Text.ToString().Length >= 1)
+            {
+                est_nombres = tb_nom_estudiante.Text;
+            }
+            else {
+
+                MessageBox.Show("El campo Nombres del Esudiante no puede estar vacio");
+                conforme = false;
+            }
+
+            //Validando campo edad del Estudiante
+            if (tb_edad_estudiante.Text.ToString().Length >= 1)
+            {
+
+                int num;
+                bool onlyNum = Int32.TryParse(tb_edad_estudiante.Text.Trim(), out num);
+                if (onlyNum)
+                {
+                    if (num >= 5)
+                    {
+                        est_edad = num;
+                    }
+                    else
+                    {
+                        MessageBox.Show("El estudiante es aún muy joven para ser aceptado");
+                        conforme = false;
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("El campo edad solo acepta valores numéricos");
+                    conforme = false;
+                }
+            }
+           
+            
+            //guardando vvalor de sexo
+            est_sexo = cb_sexo_estudiante.SelectedText;
+
+            //Guardando fehca de nacimiento
+
+            est_fecha = dtp_nac_estudiante.Value;
+
+            //validando campo celular del estudiante
+            if (tb_cel_estudiante.Text.ToString().Length >= 1)
+            {
+                if (tb_cel_estudiante.Text.ToString().Length >= 6 && tb_cel_estudiante.Text.ToString().Length <= 9)
+                {
+                    int cel;
+                    bool onlyNum = Int32.TryParse(tb_cel_estudiante.Text.Trim(), out cel);
+
+                    if (onlyNum)
+                    {
+                        est_celular = tb_cel_estudiante.Text;
+                    }
+                    else
+                    {
+                        MessageBox.Show("El campo celular solo acepta valores numéricos");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("El campo Celular ´tiene que tener entre 6 y 9 caracteres");
+                    conforme = false;
+                }
+
+
+                //Guardando dirección
+                if (tb_dir_estudiante.Text.ToString().Length >= 1) {
+                    est_direccion = tb_dir_estudiante.Text;
+                }
+
+
+                //guardando valor premio de exelencia
+                if (checkB_premioexce_estudiante.Checked) {
+                    est_premio = "SI";
+                }
+
+                //guardando valor de otro reconocimiento de estudiante
+                if (chekB_otroRec_estudiante.Checked) {
+                    if (tb_otroRec_estudiante.Text.ToString().Length >= 1)
+                    {
+                        est_otroRec = tb_otroRec_estudiante.Text;
+                    }
+                    else {
+                        MessageBox.Show("No ha ingresado ningun valor a otro reconocimiento, que no sea premio de excelencia");
+                    }
+
+                }
+                
+
+
+            }
         }
     }
 }
