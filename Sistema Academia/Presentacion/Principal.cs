@@ -530,5 +530,51 @@ namespace Presentacion
             tb_provincia_ie.Clear();
             tb_dep_ie.Clear();
         }
+
+        private void btn_limpiar_Click(object sender, EventArgs e)
+        {
+            conforme = true;
+
+            string est_dni = "";
+            string est_apellidos = "";
+            string est_nombres = "";
+            int est_edad = 0;
+            string est_sexo = "";
+            DateTime est_fecha;
+            string est_celular = "";
+            string est_direccion = "";
+            char est_premio = 'n';
+            string est_otroRec = "";
+
+            //validadción para el campo DNI del estudiante
+
+            if (tb_dniEstudiante.Text.ToString().Length >= 1)
+            {
+                if (tb_dniEstudiante.Text.ToString().Length == 8)
+                {
+                    int num;
+                    bool onlyNum = Int32.TryParse(tb_dniEstudiante.Text.Trim(), out num);
+
+                    if (onlyNum)
+                    {
+                        est_dni = tb_dniEstudiante.Text;
+                    }
+                    else {
+                        MessageBox.Show("El campo DNI solo permite valores numericos");
+                        conforme = false;
+                    }
+                }
+                else {
+                    MessageBox.Show("El campo DNI tiene que tener 8 caracteres");
+                    conforme = false;
+                }
+            }
+            else {
+
+                MessageBox.Show("El campo DNI no puede ser vacio");
+                conforme = false;
+            }
+
+        }
     }
 }

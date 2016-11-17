@@ -84,6 +84,7 @@
             this.cb_nivel = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_img = new System.Windows.Forms.Button();
             this.pb_foto = new System.Windows.Forms.PictureBox();
             this.tb_dir_estudiante = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -150,7 +151,6 @@
             this.label32 = new System.Windows.Forms.Label();
             this.page_Reportes = new System.Windows.Forms.TabPage();
             this.page_horarios = new System.Windows.Forms.TabPage();
-            this.btn_img = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.page_matricula.SuspendLayout();
             this.matricula.SuspendLayout();
@@ -217,6 +217,7 @@
             this.btn_limpiar.TabIndex = 35;
             this.btn_limpiar.Text = "Limpiar";
             this.btn_limpiar.UseVisualStyleBackColor = true;
+            this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
             // 
             // btn_registrar
             // 
@@ -775,6 +776,16 @@
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Estudiante:";
+            // 
+            // btn_img
+            // 
+            this.btn_img.Location = new System.Drawing.Point(267, 238);
+            this.btn_img.Name = "btn_img";
+            this.btn_img.Size = new System.Drawing.Size(163, 23);
+            this.btn_img.TabIndex = 20;
+            this.btn_img.Text = "Cargar Imagen";
+            this.btn_img.UseVisualStyleBackColor = true;
+            this.btn_img.Click += new System.EventHandler(this.btn_img_Click);
             // 
             // pb_foto
             // 
@@ -1385,16 +1396,6 @@
             this.page_horarios.TabIndex = 4;
             this.page_horarios.Text = "Horarios";
             this.page_horarios.UseVisualStyleBackColor = true;
-            // 
-            // btn_img
-            // 
-            this.btn_img.Location = new System.Drawing.Point(267, 238);
-            this.btn_img.Name = "btn_img";
-            this.btn_img.Size = new System.Drawing.Size(163, 23);
-            this.btn_img.TabIndex = 20;
-            this.btn_img.Text = "Cargar Imagen";
-            this.btn_img.UseVisualStyleBackColor = true;
-            this.btn_img.Click += new System.EventHandler(this.btn_img_Click);
             // 
             // openFileDialog1
             // 
