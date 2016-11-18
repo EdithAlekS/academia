@@ -796,9 +796,9 @@ namespace Presentacion
         private void tb_dniEstudiante_TextChanged(object sender, EventArgs e)
         {
             limpiarCamposEstudiante();
-
+            pb_foto.Load(@"imagenes/masculino.jpg");
             //si ya se ingreso el DNI completamente
-           
+
             if (tb_dniEstudiante.Text.ToString().Length == 8) {
                 MEstudiante est_temp = estudianteAD.buscarEstudiantePorDni(tb_dniEstudiante.Text);
 
@@ -810,7 +810,7 @@ namespace Presentacion
                     llenarCamposDeEstudiante(est_temp, nombreColegio, dniApoderado);
                 }
                 else {
-                    pb_foto.Load(@"imagenes/masculino.jpg");
+                   
                 }
             }
         }
