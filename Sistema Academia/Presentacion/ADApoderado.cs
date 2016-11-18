@@ -52,7 +52,8 @@ namespace Presentacion
         public MApoderado buscarApoderado(string dni) {
             try {
                 SqlConnection conexion = conectar.obtenerConexion();
-
+                MApoderado temp = new MApoderado();
+                int cont = 0;
                 string consulta = "select [apo_dni],[apo_apellidos],[apo_nombres],[apo_celular] from apoderado where [apo_dni]=@_dni";
                 SqlCommand comando = new SqlCommand(consulta, conexion);
                 comando.Parameters.AddWithValue("@_dni", dni);
@@ -64,14 +65,16 @@ namespace Presentacion
                     string apellidos = (string)dr["apo_apellidos"];
                     string nombres = (string)dr["apo_nombres"];
                     string celular = (string)dr["apo_celular"];
-
-                    MApoderado temp = new MApoderado(dni, apellidos, nombres, celular);
-                    return temp;
+                    cont++;
+                    temp = new MApoderado(dni, apellidos, nombres, celular);
+                    
                 }
 
                 conexion.Dispose();
                 conexion.Close();
-
+                if (cont > 0) {
+                    return temp;
+                }
                 return null;
 
             }

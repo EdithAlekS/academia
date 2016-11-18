@@ -803,10 +803,14 @@ namespace Presentacion
                 MEstudiante est_temp = estudianteAD.buscarEstudiantePorDni(tb_dniEstudiante.Text);
 
                 //llenamos campos de estudiante
-                if (est_temp != null) {
+                if (est_temp != null)
+                {
                     string nombreColegio = estudianteAD.buscarColegioAsinadoEstudiante(tb_dniEstudiante.Text);
                     string dniApoderado = estudianteAD.buscarApoderadoAsignadoEstudiante(tb_dniEstudiante.Text);
-                    llenarCamposDeEstudiante(est_temp, nombreColegio,dniApoderado);
+                    llenarCamposDeEstudiante(est_temp, nombreColegio, dniApoderado);
+                }
+                else {
+                    pb_foto.Load(@"imagenes/masculino.jpg");
                 }
             }
         }
@@ -836,6 +840,9 @@ namespace Presentacion
             //llenamos datos en colegio y apoderado
             tb_nombre_ie.Text = nombreColegio;
             tb_apo_dni.Text = dniApoderado;
+
+            //actualizar picture vox
+            estudianteAD.verImagen(pb_foto,est_temp.Dni.ToString());
         }
     }
 }

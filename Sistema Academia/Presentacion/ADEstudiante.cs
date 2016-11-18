@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Data;
 
 namespace Presentacion
 {
@@ -182,6 +183,26 @@ namespace Presentacion
             }
         }
 
+        public void verImagen(PictureBox foto, string dni) {
+            try
+            {
+                SqlConnection conexion = conectar.obtenerConexion();
+               
+                SqlDataAdapter da = new SqlDataAdapter("Select est_foto from estudiante where est_dni = '"+dni+"'", conexion);
+                DataSet ds = new DataSet();
+                da.Fill(ds, "estudiante");
+                byte[] datos = new byte[0];
+                DataRow dr = ds.Tables["estudiante"].Rows[0];
+                datos = (byte[])dr["est_foto"];
+                System.IO.MemoryStream ms = new System.IO.MemoryStream(datos);
+                foto.Image = System.Drawing.Bitmap.FromStream(ms);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo consultar la Imagen: " + ex.ToString());
+            }
+
+        }
 
         //fin---
     }
