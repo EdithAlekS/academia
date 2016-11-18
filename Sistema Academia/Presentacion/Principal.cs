@@ -58,11 +58,11 @@ namespace Presentacion
 
             //creamos y llenamos valores de la lista grados
             List<string> grados = new List<string>();
-            grados.Add("1°");
-            grados.Add("2°");
-            grados.Add("3°");
-            grados.Add("4°");
-            grados.Add("5°");
+            grados.Add("1");
+            grados.Add("2");
+            grados.Add("3");
+            grados.Add("4");
+            grados.Add("5");
 
             //asiganamos lista al combo de grado
             cb_grado.DataSource = grados;
@@ -107,14 +107,14 @@ namespace Presentacion
         {
             tb_costo_matricula.Clear();
 
-            if (cb_nivel.SelectedItem.ToString() == "Primaria") {
+            if (cb_nivel.SelectedItem.ToString() == "PRIMARIA") {
                 
                 tb_costo_matricula.Text = cicloActual.primaria.ToString();
 
                 cb_grado.Enabled = false;
             }
 
-            if (cb_nivel.SelectedItem.ToString() == "Pre - Universitario")
+            if (cb_nivel.SelectedItem.ToString() == "PRE - UNIVERSITARIO")
             {
                
                 tb_costo_matricula.Text = cicloActual.pre.ToString();
@@ -123,28 +123,28 @@ namespace Presentacion
                 
             }
 
-            if (cb_nivel.SelectedItem.ToString() == "Secundaria")
+            if (cb_nivel.SelectedItem.ToString() == "SECUNDARIA")
             {
                 
                 cb_grado.Enabled = true;
-                cb_grado.SelectedItem = "1°";
-                cb_grado.SelectedItem = "4°";
+                cb_grado.SelectedItem = "1";
+                cb_grado.SelectedItem = "4";
             }
         }
 
         private void cb_grado_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cb_nivel.SelectedItem.ToString() == "Secundaria") { 
+            if (cb_nivel.SelectedItem.ToString() == "SECUNDARIA") { 
             tb_costo_matricula.Clear();
 
 
-            if (cb_grado.SelectedItem.ToString() == "1°" || cb_grado.SelectedItem.ToString() == "2°")
+            if (cb_grado.SelectedItem.ToString() == "1" || cb_grado.SelectedItem.ToString() == "2")
             {
 
                 tb_costo_matricula.Text = cicloActual.secundaria_a.ToString();
             }
 
-            if (cb_grado.SelectedItem.ToString() == "3°" || cb_grado.SelectedItem.ToString() == "4°" || cb_grado.SelectedItem.ToString() == "5°")
+            if (cb_grado.SelectedItem.ToString() == "3" || cb_grado.SelectedItem.ToString() == "4" || cb_grado.SelectedItem.ToString() == "5")
             {
 
                 tb_costo_matricula.Text = cicloActual.secundaria_b.ToString();
@@ -232,7 +232,7 @@ namespace Presentacion
                 tb_desc_otro.Enabled = true;
                 grB_pago.Enabled = false;
 
-                tb_costoNeto.Text = tb_codigoMatricula.Text;
+                tb_costoNeto.Text = tb_costo_matricula.Text;
             }
             else {
                 tb_desc_otro.Enabled = false;
@@ -313,8 +313,61 @@ namespace Presentacion
 
         private void btn_imprimir_Click(object sender, EventArgs e)
         {
+            //Codigo temporal, luego debería pasar a la parte de registro
+
+            conforme = true;
+            string dniEstudiante = tb_dniEstudiante.Text;
+            string codigoMatricula = tb_codigoMatricula.Text;
+            string nivel = cb_nivel.SelectedItem.ToString();
+            int grado = 0;
+            if (nivel.Equals("SECUNDARIA")) {
+                grado = Int32.Parse(cb_grado.SelectedItem.ToString());
+            }
+            float costo = float.Parse(tb_costo_matricula.Text);
+            float deuda = float.Parse(tb_deudaFinal.Text);
+
+            //validar el tipo de descuento
+            string tipoDescuento = "";
+            float descuento = 0;
+
+            if (rb_desc_ninguno.Checked) {
+                tipoDescuento = "NINGUNO";
+                descuento = 0;
+            }
+
+            if (rb_desc_becaComp.Checked) {
+                tipoDescuento = "BECA COMPLETA";
+                descuento = costo;
+            }
+
+            if (rb_desc_mediaBec.Checked) {
+                tipoDescuento = "MEDIA BECA";
+                descuento = (costo / 2);
+            }
+
+            if (rb_desc_otro.Checked) {
+                tipoDescuento = "OTRO DESCUENTO";
+                descuento = float.Parse(tb_desc_otro.Text);
+            }
 
 
+            //registro de la matricula
+           
+
+            if (conforme) {
+                MMatricula matTemp = new MMatricula(codigoMatricula, nivel, grado, costo, deuda, tipoDescuento, descuento);
+                bool registrado=matriculaAD.registrarMatricula(matTemp, ciclo, dniEstudiante);
+
+                if (registrado)
+                {
+                    //mensaje temporal
+                    MessageBox.Show("Matricula Registrada Correctamente");
+                }
+                else {
+                    MessageBox.Show("Error al registrar Matricula");
+                    conforme = false;
+                }
+            }
 
         }
 
