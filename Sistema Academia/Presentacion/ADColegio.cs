@@ -79,6 +79,7 @@ namespace Presentacion
             
             try {
                 MColegio temp = new MColegio();
+                int cont = 0;
 
                 SqlConnection conexion = conectar.obtenerConexion();
                 string consulta = "select col_id,col_nombre, col_direccion, col_distrito,col_provincia, col_departamento from colegio where col_nombre = @nombre and estado = 'a'";
@@ -93,17 +94,19 @@ namespace Presentacion
                     string distrito = (string)dr["col_distrito"];
                     string provincia = (string)dr["col_provincia"];
                     string departamento = (string)dr["col_departamento"];
-
+                    cont++;
                     temp = new MColegio(codigo, nombre, direccion, distrito, provincia, departamento);
                    
                 }
 
                 conexion.Dispose();
                 conexion.Close();
+                if (cont > 0) {
+                    return temp;
+                }
 
 
-
-                return temp;
+                return null;
             } catch (Exception e) {
                 MessageBox.Show("Error al buscar colegio "+e.ToString());
                 return null;

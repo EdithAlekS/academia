@@ -939,6 +939,7 @@
             this.tb_dniEstudiante.Name = "tb_dniEstudiante";
             this.tb_dniEstudiante.Size = new System.Drawing.Size(150, 20);
             this.tb_dniEstudiante.TabIndex = 25;
+            this.tb_dniEstudiante.TextChanged += new System.EventHandler(this.tb_dniEstudiante_TextChanged);
             // 
             // label1
             // 

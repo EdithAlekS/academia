@@ -69,6 +69,8 @@ namespace Presentacion
                     return temp;
                 }
 
+                conexion.Dispose();
+                conexion.Close();
 
                 return null;
 

@@ -22,9 +22,16 @@ namespace Presentacion
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            try {
+                SqlConnection conexion = conectar.obtenerConexion();
+                conexion.Dispose();
+                conexion.Close();
+                MessageBox.Show("Bienvenido al Sistema de la Academia");
+
+            } catch (Exception ex) {
+                MessageBox.Show("Error al conectar con el servidor: " + ex.ToString());
+            }
             
-            SqlConnection conexion = conectar.obtenerConexion();
-            MessageBox.Show("Bienvenido al Sistema de la Academia");
            
             List<string> ciclos = new List<string>();
             ciclos = cicloAD.obtenerCiclos();
