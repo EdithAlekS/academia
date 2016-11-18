@@ -16,6 +16,7 @@ namespace Presentacion
         static ADApoderado apoderadoAD = new ADApoderado();
         static ADColegio colegioAD = new ADColegio();
         static ADEstudiante estudianteAD = new ADEstudiante();
+        static ADMatricula matriculaAD = new ADMatricula();
         String ciclo { get; set; }
         MCiclo cicloActual = new MCiclo();
         bool nuevoApoderado = true;
@@ -33,6 +34,9 @@ namespace Presentacion
             llenarCamposPorDefecto();
 
             colegioAD.autocompletarColegio(tb_nombre_ie);
+
+            //obtener nombre de la matricula
+            tb_codigoMatricula.Text = matriculaAD.obtenerCodigo(ciclo);
         }
 
         private void obtenerDetalleDeCiclo()
@@ -44,13 +48,13 @@ namespace Presentacion
         {
             //creamos y llenamos valores de la lista niveles
             List<String> niveles = new List<string>();
-            niveles.Add("Primaria");
-            niveles.Add("Secundaria");
-            niveles.Add("Pre - Universitario");
+            niveles.Add("PRIMARIA");
+            niveles.Add("SECUNDARIA");
+            niveles.Add("PRE - UNIVERSITARIO");
 
             //asignamos lista al combo de nivel
             cb_nivel.DataSource = niveles;
-            cb_nivel.SelectedItem = "Pre - Universitario";
+            cb_nivel.SelectedItem = "PRE - UNIVERSITARIO";
 
             //creamos y llenamos valores de la lista grados
             List<string> grados = new List<string>();
@@ -843,6 +847,11 @@ namespace Presentacion
 
             //actualizar picture vox
             estudianteAD.verImagen(pb_foto,est_temp.Dni.ToString());
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

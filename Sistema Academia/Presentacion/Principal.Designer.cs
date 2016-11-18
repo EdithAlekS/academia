@@ -1410,6 +1410,7 @@
             this.Controls.Add(this.page_matricula);
             this.Name = "Principal";
             this.Text = "Principal";
+            this.Load += new System.EventHandler(this.Principal_Load);
             this.page_matricula.ResumeLayout(false);
             this.matricula.ResumeLayout(false);
             this.matricula.PerformLayout();

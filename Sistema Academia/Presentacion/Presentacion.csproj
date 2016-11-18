@@ -50,6 +50,7 @@
     <Compile Include="ADCiclo.cs" />
     <Compile Include="ADColegio.cs" />
     <Compile Include="ADEstudiante.cs" />
+    <Compile Include="ADMatricula.cs" />
     <Compile Include="MApoderado.cs" />
     <Compile Include="MCiclo.cs" />
     <Compile Include="conectar.cs" />
