@@ -37,6 +37,8 @@ namespace Presentacion
 
             //obtener nombre de la matricula
             tb_codigoMatricula.Text = matriculaAD.obtenerCodigo(ciclo);
+
+            tb_modalidad.Text = "Nuevo";
         }
 
         private void obtenerDetalleDeCiclo()
@@ -707,7 +709,7 @@ namespace Presentacion
 
 
             //guardando vvalor de sexo
-            est_sexo = cb_sexo_estudiante.SelectedText;
+            est_sexo = cb_sexo_estudiante.SelectedValue.ToString();
 
             //Guardando fehca de nacimiento
 
@@ -854,6 +856,7 @@ namespace Presentacion
         {
             limpiarCamposEstudiante();
             pb_foto.Load(@"imagenes/masculino.jpg");
+            tb_modalidad.Text = "Nuevo";
             //si ya se ingreso el DNI completamente
 
             if (tb_dniEstudiante.Text.ToString().Length == 8) {
@@ -865,6 +868,8 @@ namespace Presentacion
                     string nombreColegio = estudianteAD.buscarColegioAsinadoEstudiante(tb_dniEstudiante.Text);
                     string dniApoderado = estudianteAD.buscarApoderadoAsignadoEstudiante(tb_dniEstudiante.Text);
                     llenarCamposDeEstudiante(est_temp, nombreColegio, dniApoderado);
+
+                    tb_modalidad.Text = "Ex-Alumno";
                 }
                 else {
                    

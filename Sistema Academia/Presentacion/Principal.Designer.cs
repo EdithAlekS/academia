@@ -75,7 +75,7 @@
             this.tb_nombre_ie = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cb_modalidad = new System.Windows.Forms.TextBox();
+            this.tb_modalidad = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.cb_ciclo = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -666,7 +666,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.cb_modalidad);
+            this.groupBox2.Controls.Add(this.tb_modalidad);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.cb_ciclo);
             this.groupBox2.Controls.Add(this.label12);
@@ -681,13 +681,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Matrícula";
             // 
-            // cb_modalidad
+            // tb_modalidad
             // 
-            this.cb_modalidad.Enabled = false;
-            this.cb_modalidad.Location = new System.Drawing.Point(16, 169);
-            this.cb_modalidad.Name = "cb_modalidad";
-            this.cb_modalidad.Size = new System.Drawing.Size(121, 20);
-            this.cb_modalidad.TabIndex = 20;
+            this.tb_modalidad.Enabled = false;
+            this.tb_modalidad.Location = new System.Drawing.Point(16, 169);
+            this.tb_modalidad.Name = "tb_modalidad";
+            this.tb_modalidad.Size = new System.Drawing.Size(121, 20);
+            this.tb_modalidad.TabIndex = 20;
             // 
             // label13
             // 
@@ -1498,7 +1498,7 @@
         private System.Windows.Forms.TextBox tb_nombre_ie;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox cb_modalidad;
+        private System.Windows.Forms.TextBox tb_modalidad;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cb_ciclo;
         private System.Windows.Forms.Label label12;

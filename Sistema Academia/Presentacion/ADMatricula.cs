@@ -11,7 +11,64 @@ namespace Presentacion
     class ADMatricula
     {
         public string obtenerCodigo(string ciclo) {
-            return "2016-20001";
+            try {
+
+                string codigoMatricula = "";
+                int ultRegistro = 0;
+
+                SqlConnection conexion = conectar.obtenerConexion();
+                string consulta = "select  top(1)  [mat_codigo] from matricula where [mat_codigo] like @ciclo+'%' order by [mat_codigo] DESC";
+                SqlCommand comando = new SqlCommand(consulta, conexion);
+                comando.Parameters.AddWithValue("@ciclo", ciclo);
+                SqlDataReader dr = comando.ExecuteReader();
+
+                while (dr.Read())
+                {
+
+                    codigoMatricula = (string)dr["mat_codigo"];
+                    
+                }
+                conexion.Dispose();
+                conexion.Close();
+
+                //procesando el codigo y creando nuevo
+                if (codigoMatricula == "") {
+                    codigoMatricula = ciclo + "0001";
+                } else {
+                    ultRegistro = Int32.Parse(codigoMatricula.Substring(6, 4))+1;
+                    codigoMatricula = ciclo;
+
+                    if (ultRegistro < 10)
+                    {
+                        codigoMatricula += "000" + ultRegistro;
+                    }
+                    else {
+                        if (ultRegistro < 100)
+                        {
+                            codigoMatricula += "00" + ultRegistro;
+                        }
+                        else {
+                            if (ultRegistro < 1000)
+                            {
+                                codigoMatricula += "0" + ultRegistro;
+                            }
+                            else {
+                                codigoMatricula += ultRegistro;
+                            }
+                        }
+                    }
+                }
+                
+
+                MessageBox.Show(codigoMatricula);
+
+                return codigoMatricula;
+
+            } catch (Exception e) {
+                MessageBox.Show("Error al obtener nombre de ciclo: " + e.ToString());
+                return "";
+            }
+           
         }
 
         public bool registrarMatricula(MMatricula matricula, string ciclo, string dni) {
